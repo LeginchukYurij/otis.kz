@@ -1,0 +1,91 @@
+include ../../components/nice-select/nice-select
+include ../../components/brd-btn/brd-btn
+
+header.main-header.dark 
+  .container 
+    
+    a(href="/").logo 
+      img(src="img/svg/logo.svg", alt="Отис логотип") 
+
+    nav.main-navigation 
+      ul 
+        li.has-childs 
+          a(href="/company.html") Компания 
+          button(type="button" aria-label="dropdown button").menu-dropdown
+
+          .list
+            ul 
+              li           
+                a(href="/for-apartments.html") Для квартир 
+              li        
+                a(href="/for-houses.html") Для домов 
+              li        
+                a(href="/for-businesses.html") Для бизнеса  
+
+        li           
+          a(href="/for-apartments.html") Для квартир 
+        li        
+          a(href="/for-houses.html") Для домов 
+        li        
+          a(href="/for-businesses.html") Для бизнеса   
+        li.has-childs       
+          a(href="/for-clients.html") Клиентам 
+          button(type="button" aria-label="dropdown button").menu-dropdown
+          .list
+            ul 
+              li           
+                a(href="/for-apartments.html") Для квартир 
+              li        
+                a(href="/for-houses.html") Для домов 
+              li        
+                a(href="/for-businesses.html") Для бизнеса  
+
+
+        li           
+          a(href="/payment.html") Оплата
+
+      button(type="button" aria-label="uncollapse").main-navigation__dots 
+        <svg width="3" height="4" viewBox="0 0 3 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="1.5" cy="2" r="1.5" fill="#FE8000"/>
+        </svg> 
+        <svg width="3" height="4" viewBox="0 0 3 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="1.5" cy="2" r="1.5" fill="#FE8000"/>
+        </svg> 
+        <svg width="3" height="4" viewBox="0 0 3 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="1.5" cy="2" r="1.5" fill="#FE8000"/>
+        </svg> 
+
+
+    .main-header__actions 
+      include ../../components/tel/tel  
+
+      +nice-select('geo-city')
+        option(value="Алматы") Алматы
+        option(value="Астана") Астана
+        option(value="Усть-Каменогорск") Усть-Каменогорск
+        option(value="Шымкент") Шымкент
+        option(value="Тараз") Тараз
+        option(value="Актобе") Актобе
+        option(value="Караганда") Караганда
+        option(value="Костанай") Костанай
+        option(value="Павлодар") Павлодар
+        option(value="Актау") Актау
+        option(value="Атырау") Атырау
+        option(value="Уральск") Уральск
+        option(value="Алматинская область") Алматинская область
+        option(value="Семей") Семей
+        option(value="Кызылорда") Кызылорда
+        option(value="Кокшетау") Кокшетау
+        option(value="Талдыкорган") Талдыкорган
+        option(value="Петропавловск ") Петропавловск 
+
+      +brd-btn 
+        | Заказать звонок
+
+      +nice-select('lang', 'lang-switcher')
+        option(value="RU") RU
+        option(value="KAZ ") KAZ 
+        option(value="EN") EN
+ 
+  
+      

@@ -1,4 +1,77 @@
-h1, h2, h3, h4, h5, h6, ul {
-    margin: 0;
-    padding: 0;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+ul {
+  list-style: none;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:root {
+  --accent: #fe8000;
+  --accent-trs: rgba(239, 127, 26, 0.31);
+  --text: #000;
+
+  --darken-bg: #0f0f0f;
+  --dark-bg-1: #232323;
+  --dark-bg-2: #2e2e2f;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Russo One';
+}
+
+a,
+a *,
+button,
+button * {
+  transition: all 0.2s ease;
+}
+
+a:hover,
+button:hover {
+  opacity: 0.8;
+}
+
+.container {
+  max-width: 1530px;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dark {
+  color: #fff;
+}
+
+.light {
+  color: #000;
 }

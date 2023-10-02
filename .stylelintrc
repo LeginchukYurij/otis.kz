@@ -248,7 +248,7 @@
         "string-no-newline": [true, {
             "message": "В строчных данных не должно быть переносов"
         }],
-        "string-quotes": ["double", {
+        "string-quotes": ["single", {
             "message": "В проекте двойные кавычки"
         }],
 

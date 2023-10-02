@@ -1,0 +1,15 @@
+.brd-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  height: fit-content;
+  color: var(--accent);
+  border-radius: 20px;
+  border: 1px solid var(--accent);
+  font-weight: 700;
+  line-height: 14px;
+  text-align: center;
+  padding: 12px 19px 12px;
+  background: none;
+}
