@@ -1,0 +1,56 @@
+.geo-section {
+  padding-top: 71px;
+  padding-bottom: 90px;
+  background-image: url('../img/geo-section-bg.webp');
+  background-position: top 0 left 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: var(--dark-bg-2);
+
+  &__content {
+    display: grid;
+    grid-template-columns: 376px 1fr;
+    column-gap: 68px;
+  }
+
+  &__title-container {
+    padding-top: 38px;
+
+    p {
+      margin: 0;
+      max-width: 342px;
+    }
+
+    .btn {
+      margin-top: 43px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 34px;
+  }
+
+  &__map {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+      position: absolute;
+      top: 47%;
+      left: 51%;
+      transform: translate(-50%, -50%);
+      max-width: 100%;
+    }
+
+    [data-aos^='zoom'][data-aos^='zoom'].aos-animate {
+      opacity: 1;
+      transform: none !important;
+    }
+
+    [data-aos='zoom-in'] {
+      transform: none;
+    }
+  }
+}
