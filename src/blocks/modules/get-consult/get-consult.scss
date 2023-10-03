@@ -10,7 +10,11 @@
   display: flex;
   align-items: center;
   column-gap: 128px;
-  margin-top: -131px;
+
+  position: absolute;
+  top: -131px;
+  left: 15px;
+  width: calc(100% - 30px);
 
   &__title {
     margin-bottom: 2px;

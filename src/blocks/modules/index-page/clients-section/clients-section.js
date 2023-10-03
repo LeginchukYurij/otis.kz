@@ -1,13 +1,10 @@
-modules.define('clients-section', ['i-bem-dom'], function(provide, bemDom) {
+import Swiper from '../../../../../node_modules/swiper/swiper-bundle.min.mjs';
 
-provide(bemDom.declBlock(this.name, {
-    onSetMod: {
-        js: {
-            inited: function() {
-                
-            }
-        }
-    }
-}));
-
+new Swiper('.clients-section__content-slider', {
+  slidesPerView: 5,
+  spaceBetween: 18,
+  navigation: {
+    nextEl: '.clients-section__content-slider .swiper-button-next.next',
+    prevEl: '.clients-section__content-slider .swiper-button-prev.prev',
+  },
 });
