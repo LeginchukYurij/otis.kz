@@ -1,0 +1,41 @@
+.get-consult-module {
+  background-image: url(../img/circ.webp),
+    linear-gradient(130deg, #195043 -3.31%, #a8240b 60.14%);
+  background-position: bottom 0 right 0;
+  background-repeat: no-repeat;
+
+  padding: 70px 151px 88px 101px;
+  border-radius: 30px;
+  height: 235px;
+  display: flex;
+  align-items: center;
+  column-gap: 128px;
+  margin-top: -131px;
+
+  &__title {
+    margin-bottom: 2px;
+  }
+
+  &__text span {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 13px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+  }
+
+  &__form {
+    flex: 1;
+    display: grid;
+    grid-template-columns: minmax(auto, 225px) minmax(auto, 225px) auto;
+    gap: 11px;
+    margin-top: 13px;
+
+    .btn {
+      width: 100%;
+    }
+  }
+}

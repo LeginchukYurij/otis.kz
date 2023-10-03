@@ -1,0 +1,27 @@
+.filled-btn {
+  display: inline-flex;
+  padding: 17px 30px 17px 30px;
+  min-height: 50px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  background: #fff;
+  width: fit-content;
+  height: fit-content;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 14px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+
+  &--accent {
+    background-color: var(--accent);
+    color: #fff;
+  }
+
+  &--accent-shadow {
+    box-shadow: 0px 20px 20px 0px rgba(254, 128, 0, 0.21);
+  }
+}

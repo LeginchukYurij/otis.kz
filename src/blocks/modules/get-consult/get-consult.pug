@@ -1,0 +1,16 @@
+include ../../components/input/input
+include ../../components/filled-btn/filled-btn
+
+.get-consult-module 
+  .get-consult-module__text 
+    h3.get-consult-module__title Нужна консультация?
+
+    span
+      img(src="img/svg/time.svg", alt="#") 
+      | Перезвоним через 10 минут
+
+  form.get-consult-module__form
+    +input('text', 'tel', 'Номер телефона', 'tel-mask')
+    +input('text', 'city', 'Ваш город', '')
+    +filled-btn('btn', 'submit')
+      | Получить консультацию

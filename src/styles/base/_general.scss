@@ -53,6 +53,28 @@ h4,
 h5,
 h6 {
   font-family: 'Russo One';
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 70px;
+  line-height: 80px;
+}
+
+h2 {
+  font-size: 60px;
+  line-height: 70px;
+
+  span {
+    display: block;
+    font-size: 35px;
+    font-weight: 400;
+  }
+}
+
+h3 {
+  font-size: 35px;
+  line-height: 50px;
 }
 
 a,

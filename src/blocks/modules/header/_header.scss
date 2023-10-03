@@ -4,6 +4,8 @@
   min-height: 80px;
   display: flex;
   align-items: center;
+  position: relative;
+  z-index: 3;
 
   .container {
     display: grid;
