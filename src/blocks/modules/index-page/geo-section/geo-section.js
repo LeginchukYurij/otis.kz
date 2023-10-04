@@ -1,3 +1,5 @@
-import * as AOS from '../../../../../node_modules/aos/dist/aos';
+// import * as AOS from '../../../../../node_modules/aos/dist/aos';
 
-AOS.init();
+// AOS.init({
+//   startEvent: 'load',
+// });
