@@ -28,6 +28,14 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  &:not(:hover) {
+    background-image: none !important;
+  }
+
+  * {
+    transition: all 0.2s ease;
+  }
+
   &__title {
     margin-bottom: 20px;
     color: #000;
@@ -60,7 +68,9 @@
     }
   }
 
-  &__dark-bg {
+  &:hover {
+    opacity: 1;
+
     .news-tile__title,
     .news-tile__footer span {
       color: #fff;
