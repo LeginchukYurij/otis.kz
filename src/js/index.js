@@ -11,5 +11,8 @@ window.addEventListener('resize', () => {
   setVhProperty();
 });
 
+
+
+
 import './import/modules';
 import './import/components';
