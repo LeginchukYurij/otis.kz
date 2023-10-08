@@ -2,6 +2,9 @@
 @import 'footer/footer';
 @import 'get-consult/get-consult';
 
+// Common
+@import 'common/stats-section//stats-section';
+
 // Index page
 @import 'index-page/hero-slider-section/hero-slider-section';
 @import 'index-page/about-section/about-section';
@@ -12,4 +15,8 @@
 @import 'index-page/geo-section/geo-section';
 @import 'index-page/clients-section/clients-section';
 @import 'index-page/latest-news-section/latest-news-section';
-@import 'common/stats-section//stats-section';
+
+
+
+// Apartments security page
+@import 'apartment-security-page/approach-section/approach-section';
