@@ -4,7 +4,6 @@ const selects = document.querySelectorAll('.n-select');
 
 if (selects.length) {
   selects.forEach((select) => {
-    console.log(NiceSelect);
     new NiceSelect(select);
   });
 }

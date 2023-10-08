@@ -1,0 +1,52 @@
+include ../../../components/filled-btn/filled-btn
+include ../../../components/back-row/back-row
+
+section.hero-section.dark 
+
+    +back-row("/")
+      | На главную
+
+    .hero-section__slider.hero-section__slider--t2.swiper
+      .swiper-wrapper 
+        .swiper-slide.hero-slide
+          img(src="img/spycamera.webp", alt="#").shape.shape1
+          img(src="img/hause2.webp", alt="#").shape.shape2
+          img(src="img/hand.webp", alt="#").shape.shape3
+
+
+          .container 
+            .hero-slide__content
+              h1.hero-slide__title Охраняем <span>квартиры</span><br> более 20 лет
+
+              +filled-btn('accent accent-shadow', 'button')
+                | Получить консультацию
+
+        .swiper-slide.hero-slide
+          img(src="img/spycamera.webp", alt="#").shape.shape1
+          img(src="img/hause2.webp", alt="#").shape.shape2
+          img(src="img/hand.webp", alt="#").shape.shape3
+
+          .container 
+            .hero-slide__content
+              h1.hero-slide__title Охраняем <span>квартиры</span><br> более 20 лет
+
+
+              +filled-btn('accent accent-shadow', 'button')
+                | Получить консультацию
+
+        .swiper-slide.hero-slide 
+          img(src="img/spycamera.webp", alt="#").shape.shape1
+          img(src="img/hause2.webp", alt="#").shape.shape2
+          img(src="img/hand.webp", alt="#").shape.shape3
+
+
+          .container 
+            .hero-slide__content
+              h1.hero-slide__title Охраняем <span>квартиры</span><br> более 20 лет
+
+
+
+              +filled-btn('accent accent-shadow', 'button')
+                | Получить консультацию
+      
+      .hero-pagination.swiper-pagination

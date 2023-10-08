@@ -1,0 +1,32 @@
+.back-row {
+  position: absolute;
+  top: 106px;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.back-btn {
+  color: #C4C4C4;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 80px; 
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  text-decoration: none;
+ 
+  cursor: pointer;
+  padding: 0;
+
+  &:hover {
+    color: var(--accent);
+    opacity: 1;
+
+    svg path {
+      stroke: var(--accent);
+    }
+  }
+}
