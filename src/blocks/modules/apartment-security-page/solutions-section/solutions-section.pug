@@ -1,0 +1,54 @@
+include ../../../components/filled-btn/filled-btn
+include ../../../components/checkbox/checkbox
+
+section.solutions-section.container 
+  .decision-section__title-container 
+      span.subtitle выгодные тарифы услуг
+
+      .decision-section__title-row 
+        h3.decision-section__title Оптимальное решение для вашей безопасности
+
+        p Мы стремимся сделать безопасность доступной для всех, поэтому предлагаем гибкое ценообразование, различные скидки и акции, чтобы наши клиенты могли выбрать наиболее подходящее решение для своих потребностей и бюджета.
+ 
+
+  .tariff-full.tariff-full-container 
+    .tariff-full__includes 
+      .options-block 
+        strong.options-block__title В тарифе по умолчанию:
+        .options-block__grid 
+          +checkbox('checkbox', 'n2', 'n2', 'disabled', 'Защита от проникновения')
+          +checkbox('checkbox', 'n2', 'n2', 'disabled', 'Выезд группы реагирования ')
+          +checkbox('checkbox', 'n22', 'n22', 'disabled', 'Монтаж системы ')
+          +checkbox('checkbox', 'n3', 'n3', 'disabled', 'Материальная ответственность до 200 000 тг  ')
+          +checkbox('checkbox', 'n4', 'n4', 'disabled', 'Мобильное приложение ')
+          +checkbox('checkbox', 'n5', 'n5', 'disabled', 'Техническая поддержка 24/7/365')
+          +checkbox('checkbox', 'n6', 'n6', 'disabled', 'Круглосуточный')
+          +checkbox('checkbox', 'n7', 'n7', 'disabled', 'Оборудование Steamax')
+
+      .options-block
+        strong.options-block__title опционально: 
+
+    .tariff-full__info 
+      .tariff-full__info-inner 
+          .tariff-card.tariff-card--variable
+            img.tariff-card__img(src="img/tariffs/tariff2.webp", alt="#")
+            span.tariff-card__subtitle Тариф
+            h4.tariff-card__title Квартира
+
+            .tariff-card__tabs-container 
+        
+              .tariff-card__tabs-cotnent(data-tab="1").active 
+                .tariff-card__price 
+                  span Стоимость оборудования
+                  strong от 45 000 тенге
+
+                .tariff-card__price 
+                  span Абонентская плата
+                  strong от 10 000 тенге/мес
+
+                .tariff-card__actions
+                  +filled-btn('accent xs', 'button')
+                    | Заказать 
+
+                  +filled-btn('xs', 'button')
+                    | Получить консультацию

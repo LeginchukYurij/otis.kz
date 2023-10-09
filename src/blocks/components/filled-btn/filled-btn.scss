@@ -1,6 +1,6 @@
 .filled-btn {
   display: inline-flex;
-  padding: 17px 30px 17px 30px;
+  padding: 16px 30px 18px 30px;
   min-height: 50px;
   align-items: center;
   justify-content: center;
@@ -19,6 +19,11 @@
   &.accent {
     background-color: var(--accent);
     color: #fff;
+  }
+
+  &.xs {
+    padding: 11px 24px 13px;
+    min-height: 40px;
   }
 
   &.accent-shadow {
