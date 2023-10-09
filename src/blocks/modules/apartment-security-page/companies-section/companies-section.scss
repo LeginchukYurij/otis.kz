@@ -1,0 +1,69 @@
+.companies-section  {
+  padding-top: 267px;
+  padding-bottom: 127px;
+  background-color: #EFEFEF;
+  background-image: url('../img/companies-bg.webp');
+  background-position: top 0 right  0;
+  background-repeat: no-repeat;
+  background-size: cover; 
+
+  &__title {
+    margin-bottom: 86px;
+  }
+
+  .subtitle {
+    margin-bottom: 10px;
+  }
+
+  .slider-btns {
+    margin-right: 0;
+  }
+
+  .txt-link {
+    margin-top: 6px;
+  }
+}
+
+.company-slide {
+  border-radius: 30px;
+  background: #FFF;
+  backdrop-filter: blur(25px);
+  padding: 53px;
+  display: grid;
+  grid-template-columns: 106px 1fr;
+  column-gap: 38px;
+  height: auto;
+
+  &__img img {
+    box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 20px; 
+  }
+
+  &__text {
+    strong {
+      display: block;
+      color: #000;
+      font-family: Russo One;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 23px;
+      margin-bottom: 17px;
+    }
+
+    p {
+      color: #000;
+      font-family: Montserrat;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 25px; 
+      margin: 0;
+    }
+  }
+}
+
+.ptb {
+  padding-top: 85px;
+  padding-bottom: 24px;
+}

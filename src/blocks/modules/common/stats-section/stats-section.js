@@ -24,4 +24,6 @@ function startCounts(container) {
 
 const container = document.querySelector('.stats-section .counts-row');
 
-startCounts(container );
+if(container) {
+  startCounts(container );
+}

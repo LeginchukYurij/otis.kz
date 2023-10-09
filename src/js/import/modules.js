@@ -11,3 +11,4 @@ import '%modules%/common/stats-section/stats-section';
 
 
 import '%modules%/apartment-security-page/employees-section/employees-section';
+import '%modules%/apartment-security-page/companies-section/companies-section';
