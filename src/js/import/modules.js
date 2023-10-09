@@ -8,3 +8,6 @@ import '%modules%/index-page/clients-section/clients-section';
 
 
 import '%modules%/common/stats-section/stats-section';
+
+
+import '%modules%/apartment-security-page/employees-section/employees-section';
