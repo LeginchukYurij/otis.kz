@@ -1,0 +1,39 @@
+include ../../../components/filled-btn/filled-btn
+
+section.history-short-section 
+  .container 
+    h3.history-short-section__title Мы прошли долгий путь, прежде, чем стать лидером отрасли
+
+    .history-short
+      .history-short__inner 
+        .history-item 
+          .history-item__year 2020
+
+          .history-item__logo
+            img(src="img/revards/y1.webp", alt="#" width="85" height="85")
+
+          .history-item__text
+            p Компания ОТИС вновь отмечена независимой бизнес-наградой «Лидер отрасли 2020» по итогам экономического рейтинга
+
+        .history-item.history-item--reverse  
+          .history-item__text
+            p ОТИС  признана "Лидером отрасли" в области систем охраны по итогам экономических рейтингов. Открыты филиалы в городах Семей, Талдыкорган, Кокшетау, Петропавловск и Кызылорда  
+          
+          .history-item__logo
+            img(src="img/revards/y2.webp", alt="#" width="85" height="85")
+
+          .history-item__year 2019
+
+        .history-item 
+          .history-item__year 2018
+
+          .history-item__logo
+            img(src="img/revards/y3.webp", alt="#" width="85" height="85")
+
+          .history-item__text
+            p ОТИС признана "Лидером отрасли" в области систем охраны по итогам экономических рейтингов.Открыли филиалы в городах Уральск и Актау, и представительства в городах Атырау и Кызылорда
+
+
+        .history-item.history-item--btn 
+          +filled-btn('accent xs', 'button')
+            | Смотреть историю дальше

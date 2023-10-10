@@ -1,0 +1,66 @@
+.features-section  {
+  padding-top: 42px;
+  padding-bottom: 134px;
+
+  .decision-section__title-row {
+    grid-template-columns: 45.2% 1fr;
+    column-gap: 84px;
+  }
+
+  .decision-section__title-container {
+    margin-bottom: 76px;
+  }
+}
+
+
+.features-cards  {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  
+  .step {
+    min-height: 238px;
+    
+    .step__ic {
+      width: 59px;
+      height: 59px;
+      border-radius: 50%;
+      background-color: rgba(119, 119, 119, 0.28);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .step__text {
+      color: #fff;
+    }
+  }
+
+  .step:nth-child(1) {
+    background: linear-gradient(213deg, #195043 39.91%, #A8240B 121.46%);
+  }
+
+  .step:nth-child(2) {
+    background: #FE8000; 
+  }
+
+  .step:nth-child(3) {
+    background: linear-gradient(0deg, #2E2E2F 0%, #2E2E2F 100%), url(<path-to-image>), lightgray 50% / cover no-repeat; 
+  }
+
+  .step:nth-child(4) {
+    background: linear-gradient(0deg, #C4C4C4 0%, #C4C4C4 100%), url(<path-to-image>), lightgray 50% / cover no-repeat; 
+
+    .step__text {
+      color: #000;
+    }
+  }
+
+  .step:nth-child(5) {
+    background-color: #2E2E2F;
+    background-image: url('../img/steps/step-5-bg.webp');
+    background-position: bottom 0 right 0;
+    background-repeat: no-repeat;
+    background-size: cover; 
+  }
+}
