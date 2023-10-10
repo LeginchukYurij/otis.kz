@@ -125,3 +125,17 @@
     }
   }
 }
+
+.history-short--full {
+  .history-short {
+    padding-bottom: 0;
+
+    &__inner {
+      padding-bottom: 128px;
+
+      &:after {
+        width: 7px;
+      }
+    }
+  }
+}

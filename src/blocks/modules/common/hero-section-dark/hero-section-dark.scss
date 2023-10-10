@@ -1,0 +1,34 @@
+.hero-section-dark {
+  padding-top: 182px;
+  padding-bottom: 100px;
+  min-height: 884px;
+  background: #232323; 
+
+  &__title {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 80px;
+  }
+
+  .back-btn {
+    color: var(--accent);
+    svg path {
+      stroke: var(--accent);
+    }
+  }
+
+  &.xs {
+    min-height: 530px;
+  }
+
+  &.bg {
+    min-height: 598px;
+  }
+
+  & + .history-short--full {
+    margin-top: -515px;
+  }
+}

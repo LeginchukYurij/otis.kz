@@ -1,0 +1,135 @@
+extends ../layouts/default
+include ../../blocks/modules/common/hero-section-dark/hero-section-dark
+
+block variables
+	- const title = "История | Охрана квартир"
+
+block content
+	include ../../blocks/modules/header/header
+
+	main.page 
+		+heroSectinoDark('О компании', 'Этапы становления компании', ' ')
+
+		.container.history-short--full
+			.history-short
+				.history-short__inner 
+					.history-item 
+						.history-item__year 2020
+
+						.history-item__logo
+							img(src="img/revards/y1.webp", alt="#" width="85" height="85")
+
+						.history-item__text
+							p Компания ОТИС вновь отмечена независимой бизнес-наградой «Лидер отрасли 2020» по итогам экономического рейтинга
+
+					.history-item.history-item--reverse  
+						.history-item__text
+							p ОТИС  признана "Лидером отрасли" в области систем охраны по итогам экономических рейтингов. Открыты филиалы в городах Семей, Талдыкорган, Кокшетау, Петропавловск и Кызылорда  
+						
+						.history-item__logo
+							img(src="img/revards/y2.webp", alt="#" width="85" height="85")
+
+						.history-item__year 2019
+
+					.history-item 
+						.history-item__year 2018
+
+						.history-item__logo
+							img(src="img/revards/y3.webp", alt="#" width="85" height="85")
+
+						.history-item__text
+							p ОТИС признана "Лидером отрасли" в области систем охраны по итогам экономических рейтингов.Открыли филиалы в городах Уральск и Актау, и представительства в городах Атырау и Кызылорда
+			
+
+					.history-item.history-item--reverse  
+						.history-item__text
+							p ОТИС отпраздновала свое 20-летие. Открыт фронт-офис ESYL-ОТИС в городе Астана а так же 4 филиала в городах Актобе, Караганда, Костанай, Павлодар.
+						
+						.history-item__logo
+							img(src="img/revards/y4.webp", alt="#" width="85" height="85")
+
+						.history-item__year 2017
+
+					.history-item 
+						.history-item__year 2016
+
+						.history-item__logo
+							img(src="img/revards/y5.webp", alt="#" width="85" height="85")
+
+						.history-item__text
+							p ОТИС признана "Лидером отрасли 2016" в области систем охраны по итогам экономических рейтингов 2014-2015 годов. Открыты 2 филиала в городах Шымкент и Тараз. а так же фронт-офис в Алматы - ТУМАР-ОТИС.
+			
+
+					.history-item.history-item--reverse  
+						.history-item__text
+							p ОТИС признана "Лидером Отрасли 2015" года в области систем охраны по итогам экономических рейтингов 2013-2014 годов
+						
+						.history-item__logo
+							img(src="img/revards/y6.webp", alt="#" width="85" height="85")
+
+						.history-item__year 2015
+
+					.history-item 
+						.history-item__year 2014
+
+						.history-item__logo
+							img(src="img/revards/y7.webp", alt="#" width="85" height="85")
+
+						.history-item__text
+							p ОТИС была признана "Лидером отрасли 2014" в области систем охраны по итогам экономических рейтингов 2012-2013 годов. Открыли фронт-офис NORD-ОТИС. 
+			
+
+					.history-item.history-item--reverse  
+						.history-item__text
+							p В Алматы были открыты еще два офиса: EAST-ОТИС и WEST-ОТИС
+						
+						.history-item__logo
+							img(src="img/revards/y8.webp", alt="#" width="85" height="85")
+
+						.history-item__year 2013
+
+					.history-item 
+						.history-item__year 2010
+
+						.history-item__logo
+							img(src="img/revards/y9.webp", alt="#" width="85" height="85")
+
+						.history-item__text
+							p Открыт филиал ТОО "ОТИС" в г. Астана
+
+
+					.history-item.history-item--reverse  
+						.history-item__text
+							p Компания начала оказывать услуги мониторинга в городах Капшагай, Каскелен, Талгар, Есик, в п.Отеген-батыра и п.Боролдай 
+						
+						.history-item__logo
+							img(src="img/revards/y10.webp", alt="#" width="85" height="85")
+
+						.history-item__year 2007
+
+					.history-item 
+						.history-item__year 2006
+
+						.history-item__logo
+							img(src="img/revards/y11.webp", alt="#" width="85" height="85")
+
+						.history-item__text
+							p В Усть-Каменогорске открыт филиал ТОО "ОТИС", укомплектованный на конкурсной основе высококвалифицированными специалистами	
+			
+					.history-item.history-item--reverse  
+						.history-item__text
+							p 21 августа 1997 года компания ОТИС прошла официальную государственную регистрацию
+						
+						.history-item__logo
+							img(src="img/revards/y12.webp", alt="#" width="85" height="85")
+
+						.history-item__year 1997
+
+
+
+
+	include ../../blocks/modules/footer/footer
+
+block scripts
+	script(src="js/vendor.js")
+	script(src="js/main.js")

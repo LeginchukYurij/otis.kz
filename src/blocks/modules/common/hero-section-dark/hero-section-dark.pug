@@ -1,0 +1,8 @@
+include ../../../components/back-row/back-row
+
+mixin heroSectinoDark(back, title, cls)
+  section(class="hero-section-dark dark" + cls) 
+    .container
+      +back-row("/company.html")= back
+
+      h1.hero-section-dark__title=title
