@@ -143,3 +143,41 @@ button:hover {
 .page {
   padding-bottom: 217px;
 }
+
+.w-page  {
+  padding-top: 182px;
+  padding-bottom: 265px;
+  background-position: top 0 right 20px;
+  background-repeat: no-repeat;
+
+  .back-btn {
+    color: var(--accent);
+    svg path {
+      stroke: var(--accent);
+    }
+
+    &:hover {
+      color: #000;
+      svg path {
+        stroke: #000;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 21px;
+    font-family: Montserrat;
+    font-weight: 700;
+  }
+
+  &__subtitle {
+    display: block;
+    color: #444;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; 
+    max-width: 704px;
+  }
+}

@@ -1,17 +1,21 @@
 extends ../layouts/default
-include ../../blocks/modules/common/hero-section-dark/hero-section-dark
+include ../../blocks/components/back-row/back-row
 
 block variables
-	- const title = "Новости| Охрана квартир"
+	- const title = "Новости | Охрана квартир"
 
 block content
 	include ../../blocks/modules/header/header
 
-	main.page 
-		+heroSectinoDark('О компании', 'Лицензии и сертификаты', ' ')
+	main.page.w-page(style="background-image: url(/img/news/newsbg.webp)")  
+		+back-row("/company.html")
+			| О компании
 
-		
-		include ../../blocks/modules/sertificates-module/sertificates-module
+		.container
+			h1.w-page__title Новости
+			span.w-page__subtitle Обновления в мире безопасности, события компании и актуальные технологические разработки для вашей защиты
+			
+		include ../../blocks/modules/pages/news-module/news-module
 
 
 	include ../../blocks/modules/footer/footer
