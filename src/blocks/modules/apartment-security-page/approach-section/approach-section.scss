@@ -22,7 +22,11 @@
   text-decoration: none;
   padding: 26px 30px 42px ;
   border-radius: 30px;
-  background: #FE8000; 
+  background: var(--accent); 
+
+  &:hover {
+    opacity: 1;
+  }
 
   * {
     text-decoration: none;

@@ -3,7 +3,8 @@
 @import 'get-consult/get-consult';
 
 // Common
-@import 'common/stats-section//stats-section';
+@import 'common/stats-section/stats-section';
+@import 'common/companies-section/companies-section';
 
 // Index page
 @import 'index-page/hero-slider-section/hero-slider-section';
@@ -22,4 +23,5 @@
 @import 'apartment-security-page/approach-section/approach-section';
 @import 'apartment-security-page/employees-section/employees-section';
 @import 'apartment-security-page/solutions-section/solutions-section';
-@import 'apartment-security-page/companies-section/companies-section';
+@import 'apartment-security-page/faq-section/faq-section';
+@import 'apartment-security-page/spheres-section/spheres-section';

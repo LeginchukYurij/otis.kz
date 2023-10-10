@@ -1,0 +1,71 @@
+.faq-section  {
+  padding-top: 124px;
+  padding-bottom: 63px;
+
+  .btn {
+    margin-top: 35px;
+  }
+
+  &__title {
+    margin-bottom: 50px;
+  }
+}
+
+.faq-list__item  {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #C4C4C4;
+
+ 
+
+  &-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    color: #000;
+    font-family: Russo One;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px; 
+    cursor: pointer;
+
+    .arr {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid #000;
+    }
+  }
+
+  &-body {
+    display: none;
+    padding-top: 18px;
+    
+
+    p {
+      color: #000;
+      font-family: Montserrat;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 25px;
+      margin: 0;
+      max-width: 1044px;
+    }
+  }
+
+  &.opened {
+    .faq-list__item-head .arr {
+      transform: rotate(-180deg);
+    }
+
+    .faq-list__item-body {
+      display: block;
+    }
+  }
+}

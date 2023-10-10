@@ -1,0 +1,25 @@
+extends ../layouts/default
+
+block variables
+	- const title = "О компании | Охрана квартир"
+
+block content
+	include ../../blocks/modules/header/header
+
+	main 
+		include ../../blocks/modules/index-page/hero-slider-section/hero-about-section
+		include ../../blocks/modules/common/stats-section/stats-section
+		
+		include ../../blocks/modules/apartment-security-page/spheres-section/spheres-section
+
+		
+		include ../../blocks/modules/index-page/geo-section/geo-section	
+		include ../../blocks/modules/common/companies-section/companies-section
+		include ../../blocks/modules/index-page/clients-section/clients-section
+		include ../../blocks/modules/index-page/latest-news-section/latest-news-section
+
+	include ../../blocks/modules/footer/footer
+
+block scripts
+	script(src="js/vendor.js")
+	script(src="js/main.js")
