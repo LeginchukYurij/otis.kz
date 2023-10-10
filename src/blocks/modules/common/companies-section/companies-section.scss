@@ -7,6 +7,12 @@
   background-repeat: no-repeat;
   background-size: cover; 
 
+  &--t2 {
+    padding-top: 125px;
+    background-color: #EFEFEF;
+    background-position: top -148px right 10px;
+  }
+
   &__title {
     margin-bottom: 86px;
   }
