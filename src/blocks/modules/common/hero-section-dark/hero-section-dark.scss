@@ -28,7 +28,7 @@
     min-height: 598px;
   }
 
-  & + .history-short--full {
+  & + .history-short--full, & + .sertificate-container {
     margin-top: -515px;
   }
 }
