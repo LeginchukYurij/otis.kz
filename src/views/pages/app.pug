@@ -1,0 +1,70 @@
+extends ../layouts/default
+
+
+block variables
+	- const title = "Приложение | Отис"
+
+block content
+	include ../../blocks/modules/header/header
+
+	main.page.app
+		include ../../blocks/modules/pages/app-page-module/app-page-module
+		
+		.app-page-content.container 
+			.app-info-cards 
+				.app-info-card
+					.app-info-card__txt
+						strong Технические требования к мобильным устройствам под управлением Android
+
+						ul    
+							li ARM процессор
+							li версия операционной системы не ниже 4.0.0
+
+						p На процессоре IntelAtom, если версия операционной системы 4.4.2 и выше, то есть вероятность установки программы, если отключить в настройках проверку на x86 .sobinary. 
+
+					.app-info-card__img
+						img(src="img/android.webp", alt="#")
+
+				.app-info-card
+					.app-info-card__txt
+						strong Технические требования к мобильным устройствам под управлением iOS(iPhone, iPad
+
+						p Требуется версия операционной системы не ниже 8.4. Настоятельно рекомендуем проверить версию операционной системы и ни в коем случае не устанавливать новую версию iOS, если телефон предложит установить или обновить её. Если все-таки решитесь обновить iOS, то обязательно сделайте копию контактов, фото, видео и других файлов 
+
+					.app-info-card__img
+						img(src="img/apple.webp", alt="#")
+
+
+			section.access-sec
+				h2.h3.access-sec__title Для получения доступа к личному кабинету
+
+				ul.access-sec__list 
+					li.access-sec__card
+						.num 1
+
+						strong скачайте приложение
+
+						p Найдите в PlayMarket или AppleStore <br>приложение по следующему ключевому слову: " ОТИС.kz" и установите приложение
+
+					li.access-sec__card
+						.num 2
+
+						strong физическим лицам
+
+						p необходимо подойти с<br> удостоверением личности в офис и написать письменное заявление
+
+					li.access-sec__card
+						.num 3
+
+						strong юридическим лицам
+
+						p необходимо написать официальное письмо со списком лиц, которым необходимо дать доступ со следующими данными: ФИО, номер сотового, адрес объекта, вид доступа (полный, финансы, охранные события)
+
+
+
+
+	include ../../blocks/modules/footer/footer
+
+block scripts
+	script(src="js/vendor.js")
+	script(src="js/main.js")
