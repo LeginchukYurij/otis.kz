@@ -39,6 +39,10 @@
       align-items: center;
       justify-content: center;
       border: 2px solid #000;
+
+      svg {
+        transform: translateX(1px);
+      }
     }
   }
 
@@ -62,6 +66,10 @@
   &.opened {
     .faq-list__item-head .arr {
       transform: rotate(-180deg);
+
+      svg {
+        transform: translateX(0);
+      }
     }
 
     .faq-list__item-body {

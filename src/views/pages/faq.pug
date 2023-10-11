@@ -2,15 +2,15 @@ extends ../layouts/default
 include ../../blocks/modules/common/hero-section-dark/hero-section-dark
 
 block variables
-	- const title = "Сертификаты | Охрана квартир"
+	- const title = "FAQ | Отис"
 
 block content
 	include ../../blocks/modules/header/header
 
 	main.page.how-work 
-		+heroSectinoDark('На главную', 'Как работает система', 'xs')
+		+heroSectinoDark('На главную', 'Вопросы и ответы', 'xs')
 
-		include ../../blocks/modules/pages/how-work-module/how-work-module  
+		include ../../blocks/modules/pages/faq-page-module/faq-page-module
 		
 
 	include ../../blocks/modules/footer/footer

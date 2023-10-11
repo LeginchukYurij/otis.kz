@@ -1,0 +1,17 @@
+.hero-section-dark + .faq-module {
+  margin-top: -160px;
+}
+
+.faq-module__inner  {
+  padding: 50px 104px 64px 101px;
+  border-radius: 30px;
+  background: #EFEFEF; 
+
+  .faq-list__item:last-child {
+    border-bottom: none;
+  }
+
+  .faq-list__item {
+    padding-bottom: 29px;
+  }
+}
