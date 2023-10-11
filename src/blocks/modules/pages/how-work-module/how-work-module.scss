@@ -1,0 +1,157 @@
+.how-work  {
+  padding-bottom: 260px;
+}
+
+.hero-section-dark + .how-work-container {
+  margin-top: -160px;
+}
+
+.how-work-inner  {
+  padding: 98px 137px 83px 101px;
+  border-radius: 30px;
+  background: #EFEFEF;
+  display: flex;
+  gap: 66px;
+}
+
+.how-work {
+  &__img-slider {
+    width: 464px;
+    min-width: 464px;
+  
+    img {
+      border-radius: 30px;
+    }
+  }
+  
+  &__text {
+    width: calc(100% - 464px - 66px);
+    padding-top: 5px;
+  }
+
+  &__actions  {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 39px;
+    border-bottom: 1px solid #C4C4C4;
+    width: fit-content;
+    margin-bottom: 40px;
+    padding-bottom: 4px;
+  }
+
+  &__action {
+    position: relative;
+    color: #000;
+    font-family: Russo One;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    background: none;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      color: var(--accent);
+      opacity: 1;
+    }
+
+    &.active {
+      color: var(--accent);
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: calc(100% + 4px);
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: var(--accent);
+      }
+    }
+  }
+
+  &__text-slider {
+    background: #EFEFEF;
+
+    p {
+      color: #000;
+      font-family: Montserrat;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px;
+      margin: 0;
+
+      & + p {
+        margin-top: 30px;
+      }
+    }
+
+    .btn {
+      margin-top: 41px;
+    }
+
+  
+  }
+}
+
+.how-work__img-slider, .how-work__text-slider {
+  position: relative;
+}
+
+.how-work__img-slider .swiper-slide:not(.active) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s ease;
+}
+
+.how-work__text-slider .swiper-slide.active {
+  position: static;
+  opacity: 1;
+  visibility: visible;
+}
+
+.how-work__text-slider .swiper-slide:not(.active) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .7s ease;
+
+  p {
+    opacity: 0;
+    transition-delay: 1000;
+    transition: all .7s ease;
+  }
+
+  .btn {
+    opacity: 0;
+    transition-delay: 1200;
+    transition: all .7s ease;
+  }
+}
+
+.how-work__text-slider .swiper-slide.active {
+  position: static;
+  opacity: 1;
+  visibility: visible;
+  transition: all .4s ease;
+
+  p {
+    opacity: 1;
+   
+    transition: all .2s ease;
+  }
+
+  .btn {
+    opacity: 1;
+
+    transition: all 0s ease;
+  }
+}
