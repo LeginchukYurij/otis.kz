@@ -1,0 +1,58 @@
+.payment-container {
+  margin-top: 49px;
+  display: grid;
+  grid-template-columns: 41.2% 1fr;
+  column-gap: 144px;
+
+  .faq-list {
+    background: none;
+  }
+
+  .payment-faq {
+    margin-top: -21px;
+  }
+}
+
+.payment-methods  {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+
+  &__row  {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 38px;
+  }
+}
+
+.payment-method  {
+  &__head  {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+  }
+
+  &__title {
+    color: #000;
+    font-family: Russo One;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+  }
+
+  .qr {
+    margin-top: 40px;
+  }
+}
+
+.payment {
+  width: 107px;
+  height: 92.643px; 
+  border-radius: 30px;
+  background: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -3,6 +3,26 @@
   padding-top: 182px;
   padding-bottom: 271px;
 
+  &.gray {
+    background: #EFEFEF; 
+
+    .back-btn {
+      color: var(--accent);
+  
+      svg path {
+        stroke: var(--accent);
+      }
+
+      &:hover {
+        color: #000;
+  
+        svg path {
+          stroke: #000;
+        }
+      }
+    }
+  }
+
   .back-btn {
     color: var(--accent);
 
