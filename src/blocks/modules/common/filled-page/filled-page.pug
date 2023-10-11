@@ -1,0 +1,10 @@
+include ../../../components/back-row/back-row
+
+mixin filledPage(back, title, cls)
+  main(class="filled-page " + cls)
+    .container
+      +back-row("/")= back
+      
+      h1.filled-page__title=title
+
+      block

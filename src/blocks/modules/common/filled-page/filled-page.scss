@@ -1,0 +1,18 @@
+.filled-page {
+  background-color: var(--dark-bg-1);
+  padding-top: 182px;
+  padding-bottom: 271px;
+
+  .back-btn {
+    color: var(--accent);
+
+    svg path {
+      stroke: var(--accent);
+    }
+  }
+
+  &__title {
+    font-family: Montserrat; 
+    font-weight: 700;
+  }
+}
