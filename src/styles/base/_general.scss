@@ -144,6 +144,10 @@ button:hover {
   padding-bottom: 217px;
 }
 
+article.page {
+  padding-bottom: 258px;
+}
+
 .w-page  {
   padding-top: 182px;
   padding-bottom: 265px;
@@ -180,4 +184,9 @@ button:hover {
     line-height: 25px; 
     max-width: 704px;
   }
+}
+
+.sticky-box  {
+  position: sticky;
+  top: 20px;
 }

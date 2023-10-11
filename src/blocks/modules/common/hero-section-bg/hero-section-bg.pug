@@ -1,0 +1,8 @@
+include ../../../components/back-row/back-row
+
+mixin heroSectinoBg(back, title, cls)
+  section(class="hero-section-bg dark" + cls) 
+    .container
+      +back-row("/company.html")= back
+
+      h1.hero-section-bg__title=title

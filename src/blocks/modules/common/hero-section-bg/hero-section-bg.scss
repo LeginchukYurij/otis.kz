@@ -1,0 +1,38 @@
+.hero-section-bg {
+  padding-top: 182px;
+  padding-bottom: 100px;
+  min-height: 598px;
+  background: #232323;
+  background-image: url('../img/single-news-bg.webp');
+  background-position: top 0 right 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__title {
+    color: #FFF;
+    font-family: Russo One;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 70px; 
+  }
+
+  .back-btn {
+    color: var(--accent);
+    svg path {
+      stroke: var(--accent);
+    }
+  }
+
+  &.xs {
+    min-height: 530px;
+  }
+
+  &.bg {
+    min-height: 598px;
+  }
+
+  & + .single-news-container  {
+    margin-top: -190px;
+  }
+}
