@@ -1,0 +1,25 @@
+extends ../layouts/default
+include ../../blocks/components/back-row/back-row
+
+block variables
+	- const title = "Отзывы | Отис"
+
+block content
+	include ../../blocks/modules/header/header
+
+	main.page.reviews.w-page(style="background-image: url(/img/reviews-bg.webp)")  
+		+back-row("/company.html")
+			| О компании
+
+		.container
+			h1.w-page__title Отзывы
+			span.w-page__subtitle(style="max-width: 1036px;") Ваше благополучие - наша главная цель. В числе наших клиентов коммерческие банки, государственные и правительственные организации, посольства и представительства иностранных государств, предприятия нефтегазовой отрасли, представители среднего и малого бизнеса, предприятия различных секторов экономики Республики Казахстан, а также физические лица
+			
+		include ../../blocks/modules/pages/reviews-page-module/reviews-page-module
+
+
+	include ../../blocks/modules/footer/footer
+
+block scripts
+	script(src="js/vendor.js")
+	script(src="js/main.js")

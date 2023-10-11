@@ -1,0 +1,20 @@
+.reviews-module__grid  {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.reviews-module {
+  margin-top: 72px;
+
+  .btn {
+    margin-top: 91px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+
+.page.reviews {
+  background-position: top 76px right 0;
+}
