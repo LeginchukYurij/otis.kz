@@ -1,0 +1,65 @@
+.shares-hero-section {
+  background-image: url('../img/shares-hero-bg.webp');
+  background-position: top 0 center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 655px;
+  background-color: var(--accent);
+  padding-top: 182px;
+  padding-bottom: 272px;
+
+  & + .shares-list-container {
+    margin-top: -178px;
+  }
+
+  .back-btn {
+    color: #FFF; 
+
+    svg path {
+      stroke: #fff;
+    }
+
+    &:hover {
+      color: #000; 
+
+      svg path {
+        stroke: #000;
+      }
+    }
+  }
+
+  &__title {
+    font-family: Montserrat;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 80px;
+    margin-bottom: 21px;
+  }
+
+  &__descr {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    max-width: 832px;
+    margin: 0;
+  }
+
+  .shape {
+    position: absolute;
+  }
+
+  .shape1 {
+    right: 9%;
+    top: 9%;
+  }
+
+  .shape2 {
+    right: -24%;
+    top: 9%;
+    opacity: 0;
+  }
+}
