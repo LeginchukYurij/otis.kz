@@ -1,0 +1,23 @@
+extends ../layouts/default
+include ../../blocks/components/back-row/back-row
+
+block variables
+	- const title = "Оборудование | Отис"
+
+block content
+	include ../../blocks/modules/header/header
+
+	main.page.equipment.w-page
+		+back-row("/")
+			| На главную
+
+		.container
+			h1.w-page__title Оборудование
+
+			include ../../blocks/modules/pages/equipment-page-module/equipment-page-module
+
+	include ../../blocks/modules/footer/footer
+
+block scripts
+	script(src="js/vendor.js")
+	script(src="js/main.js")
