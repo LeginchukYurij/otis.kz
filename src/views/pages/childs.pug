@@ -1,0 +1,24 @@
+extends ../layouts/default
+include ../../blocks/components/back-row/back-row
+include ../../blocks/components/popup-container/popup-container
+
+block variables
+	- const title = "Дочерние компании | Отис"
+
+block content
+	include ../../blocks/modules/header/header
+
+	main.page.childs.w-page
+		+back-row("/")
+			| На главную
+
+		.container
+			h1.w-page__title Дочерние компании
+
+			include ../../blocks/modules/pages/childs-page-module/childs-page-module
+
+	include ../../blocks/modules/footer/footer
+
+block scripts
+	script(src="js/vendor.js")
+	script(src="js/main.js")

@@ -1,0 +1,45 @@
+.childs-grid  {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+  margin-top: 88px;
+}
+
+.child {
+  border-radius: 30px;
+  background: #EFEFEF; 
+  padding: 48px;
+
+  &__logo  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    background: #FFF;
+    width: 191.445px;
+    height: 191.445px; 
+    margin-bottom: 18px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .tel {
+    align-items: baseline;
+  }
+
+  .tel + .web, .tel + .tel {
+    margin-top: 6px;
+  }
+
+  .web {
+    align-items: center;
+
+    span {
+      color: var(--accent);
+    }
+  }
+}
+
+.w-page.childs {
+  padding-bottom: 302px;
+}
