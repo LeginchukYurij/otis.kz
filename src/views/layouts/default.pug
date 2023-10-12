@@ -1,4 +1,6 @@
 block variables
+include ../../blocks/components/popup-container/popup-container
+
 
 doctype html
 html(lang="ru")
@@ -28,4 +30,8 @@ html(lang="ru")
 		link(rel="stylesheet" href="styles/main.css")
 	body
 		block content
+
+
+		+popupContainer('callback', 'active')
+
 		block scripts

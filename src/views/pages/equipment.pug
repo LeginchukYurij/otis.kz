@@ -1,5 +1,6 @@
 extends ../layouts/default
 include ../../blocks/components/back-row/back-row
+include ../../blocks/components/popup-container/popup-container
 
 block variables
 	- const title = "Оборудование | Отис"
@@ -18,6 +19,9 @@ block content
 
 	include ../../blocks/modules/footer/footer
 
+	+popupContainer('product')
+		include ../../blocks/modules/popups/product-popup/product-popup
+	
 block scripts
 	script(src="js/vendor.js")
 	script(src="js/main.js")

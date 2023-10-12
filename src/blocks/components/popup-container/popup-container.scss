@@ -1,0 +1,51 @@
+.popup {
+  --pt: 15vh;
+  --pb: 15px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  height: calc(100 * var(--vh, 1vh));
+  min-height: calc(100 * var(--vh, 1vh));
+  z-index: 10;
+  background: rgba(46, 46, 47, 0.90);
+  padding-top: var(--pt);
+  padding-bottom: 100px;
+  padding-left: 15px;
+  padding-right: 15px;
+  opacity: 0;
+  transition: all .3s ease;
+  visibility: hidden;
+
+  &__inner {
+    position: relative;
+    max-width: 1242px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-y: auto;
+    max-height: calc(100vh - var(--pt) - var(--pb));
+    border-radius: 30px;
+  }
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.close-popup {
+  position: absolute;
+  width: 15px;
+  height: 15.001px; 
+  padding: 0;
+  margin: 0;
+  top: 36px;
+  right: 36px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
