@@ -29,11 +29,18 @@
     overflow-y: auto;
     max-height: calc(100vh - var(--pt) - var(--pb));
     border-radius: 30px;
+    transform: translateY(100px);
+    transition: all 0 ease-in-out;
   }
 
   &.active {
     opacity: 1;
     visibility: visible;
+
+    .popup__inner {
+      transform: translateY(0);
+      transition: all .7s ease-in-out;
+    }
   }
 }
 
