@@ -62,3 +62,20 @@
 .light .nice-select:after {
   border-color: #000;
 }
+
+
+.n-select--brd {
+  padding: 12px 52px 14px 18px;
+  border-radius: 20px;
+  border: 1px solid var(--accent); 
+  color: var(--accent);
+  font-weight: 700; 
+
+  &:after {
+    border-color: var(--accent) !important;
+  }
+
+  .list {
+    color: #fff;
+  }
+}

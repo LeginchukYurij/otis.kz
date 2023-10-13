@@ -5,6 +5,15 @@ __metadata:
   version: 6
   cacheKey: 8
 
+"@2gis/mapgl@npm:^1.40.0":
+  version: 1.40.0
+  resolution: "@2gis/mapgl@npm:1.40.0"
+  dependencies:
+    "@types/geojson": ^7946.0.7
+  checksum: 1dbdf8f830c3b3bbde32aaf126b233637e3dd7753cf1c106e666f38caaa5b5b62dadded7c9aa40430497e193e26abecf6df167691c79eb518b54d290e99b7840
+  languageName: node
+  linkType: hard
+
 "@aashutoshrathi/word-wrap@npm:^1.2.3":
   version: 1.2.6
   resolution: "@aashutoshrathi/word-wrap@npm:1.2.6"
@@ -2221,6 +2230,13 @@ __metadata:
   version: 1.20.4
   resolution: "@types/expect@npm:1.20.4"
   checksum: c09a9abec2c1776dd8948920dc3bad87b1206c843509d3d3002040983b1769b2e3914202a6c20b72e5c3fb5738a1ab87cb7be9d3fe9efabf2a324173b222a224
+  languageName: node
+  linkType: hard
+
+"@types/geojson@npm:^7946.0.7":
+  version: 7946.0.11
+  resolution: "@types/geojson@npm:7946.0.11"
+  checksum: 93fe7e9c5d16b0a836058ee4b87f8b022d53893d5a8e7ab52c8bf64d12039d076df99f3764c1c4da13abaa1001115fd899330edba4d8d8fa4a4feb162650b22c
   languageName: node
   linkType: hard
 
@@ -8051,6 +8067,7 @@ bem-tools-create@bem-tools/bem-tools-create:
   version: 0.0.0-use.local
   resolution: "gulp-pug-starter@workspace:."
   dependencies:
+    "@2gis/mapgl": ^1.40.0
     "@babel/core": ^7.17.5
     "@babel/eslint-parser": ^7.17.0
     "@babel/preset-env": ^7.16.11

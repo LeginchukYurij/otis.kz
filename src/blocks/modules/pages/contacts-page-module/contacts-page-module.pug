@@ -1,0 +1,105 @@
+include ../../../components/back-row/back-row
+include ../../../components/nice-select/nice-select--brd
+
+.contact-page.container.dark 
+  .contact-page__content 
+    +back-row("/")
+      | На главную
+
+    h1.contact-page__title Контакты
+
+    .selects-row 
+      label(for="select-city")  Выберите офис
+
+      +nice-select-brd('s-city', ' ')
+        option(value="Алматы") Алматы
+        option(value="Астана") Астана
+        option(value="Усть-Каменогорск") Усть-Каменогорск
+        option(value="Шымкент") Шымкент
+        option(value="Тараз") Тараз
+        option(value="Актобе") Актобе
+        option(value="Караганда") Караганда
+        option(value="Костанай") Костанай
+        option(value="Павлодар") Павлодар
+        option(value="Актау") Актау
+        option(value="Атырау") Атырау
+        option(value="Уральск") Уральск
+        option(value="Алматинская область") Алматинская область
+        option(value="Семей") Семей
+        option(value="Кызылорда") Кызылорда
+        option(value="Кокшетау") Кокшетау
+        option(value="Талдыкорган") Талдыкорган
+        option(value="Петропавловск ") Петропавловск 
+
+      +nice-select-brd('s-office', ' ')
+        option(value="Главный офис") Главный офис
+        option(value="Офис 2") Офис 2
+        option(value="Офис 3") Офис 3
+        option(value="Офис 4") Офис 4
+
+    .contact-page__info 
+      .col 
+        a.tel(href="tel: +7 (727) 2 58 11 55")
+          .ic
+            img(src="img/svg/tel.svg", alt="#" width="13" height="13")
+          span +7 (727) 2 58 11 55 
+
+        a.tel(href="tel: +7 (701) 258 83 93")
+          .ic
+            img(src="img/svg/viber-ac.svg", alt="#" width="15" height="18")
+          span +7 (701) 258 83 93
+
+        .managers-contacts 
+          strong Менеджеры в Алматы
+
+          ul 
+            li  
+              a(href="tel: +7 701 318 02 04") Раушанай  &nbsp;
+                span +7 701 318 02 04
+            li  
+              a(href="tel: +7 701 052 73 81")  Алмагуль &nbsp; 
+                span +7 701 052 73 81
+            li  
+              a(href="tel: +7 701 031 50 83")  Салтанат  &nbsp;
+                span +7 701 031 50 83
+            li  
+              a(href="tel: +7 701 084 21 40")  Екатерина  &nbsp;
+                span +7 701 084 21 40
+            li  
+              a(href="tel: +7 701 052 7379")  Асем  &nbsp;
+                span +7 701 052 7379
+            li  
+              a(href="tel: +7 701 052 7379")  Махпал  &nbsp;
+                span +7 701 052 7379
+            li  
+              a(href="tel:  +7 701 098 63 65")  Айдана  &nbsp;
+                span +7 701 098 63 65
+            li  
+              a(href="tel: +7 701 031 80 46")  Бахтияр  &nbsp;
+                span +7 701 031 80 46
+            li  
+              a(href="tel: +7 701 084 21 38")  Арай  &nbsp;
+                span +7 701 084 21 38
+            li  
+              a(href="tel: +7 701 054 31 84  ")  Раушан  &nbsp;
+                span +7 701 054 31 84  
+
+      .col
+        .tel.adress
+          .ic
+            img(src="img/svg/dot-ac.svg", alt="#" width="11" height="15")
+          span г. Алматы, ул. Панфилова, 101
+            small пн-пт: 09:00-18:00 <br>сб-вс: выходной
+
+        a.tel(href="mailto: info@otis.kz")
+          .ic
+            img(src="img/svg/mail.svg", alt="#" width="19" height="16")
+          span info@otis.kz
+
+        a.tel(href="https://almaty.otis.kz/" target="__blanc")
+          .ic
+            img(src="img/svg/web.svg", alt="#" width="19" height="18")
+          span almaty.otis.kz  
+
+  .contact-page__map#map
+   

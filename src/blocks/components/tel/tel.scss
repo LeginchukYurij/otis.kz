@@ -19,7 +19,7 @@
     justify-content: center;
   }
 
-  &:hover {
+  &:is(a):hover {
     opacity: 1;
 
     span {

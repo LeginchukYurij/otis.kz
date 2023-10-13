@@ -15,3 +15,4 @@ import '%modules%/common/companies-section/companies-section';
 import '%modules%/apartment-security-page/faq-section/faq-section';
 import '%modules%/pages/how-work-module/how-work-module';
 import '%modules%/pages/shares-page-module/shares-page-module';
+import '%modules%/pages/contacts-page-module/contacts-page-module';
