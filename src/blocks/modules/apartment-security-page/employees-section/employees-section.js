@@ -37,38 +37,28 @@ if(target4) {
   });
 }
 
-const target5 = document.querySelector('.employees-section  .shape4');
-const target6 = document.querySelector('.employees-section  .shape5');
-const target7 = document.querySelector('.employees-section  .shape6');
-if(target5 && target6 && target7) {
-  new TimelineMax({ repeat: -1 })
-    .to(target5, 1, {
-      opacity: 1,
-      ease: 'Power1.easeInOut',
-    })
 
-    .to(target6, 1, {
-      opacity: 1,
-      ease: 'Power1.easeInOut',
-    })
+function upOnHover(event) {
+  const t = this.dataset.target;
+  const li = document.querySelector(`.employees-section__text ul li[data-target="${t}"]`);
 
-    .to(target7, 1, {
-      opacity: 1,
-      ease: 'Power1.easeInOut',
-    })
+  if(event.type == 'mouseover') {
+    if(li) {
+      li.classList.add('active');
+    }
+  }
 
-    .to(target5, 1, {
-      opacity: 0,
-      ease: 'Power1.easeInOut',
-    })
-
-    .to(target6, 1, {
-      opacity: 0,
-      ease: 'Power1.easeInOut',
-    })
-
-    .to(target7, 1, {
-      opacity: 0,
-      ease: 'Power1.easeInOut',
-    });
+  if (event.type == 'mouseout') {
+    if(li) {
+      li.classList.remove('active');
+    }
+  }
 }
+
+const dots = document.querySelectorAll('.employees-section .shape-dot');
+
+if(dots.length) {
+  dots.forEach((dot) => {
+    dot.onmouseover = dot.onmouseout = upOnHover;
+  });
+} 
