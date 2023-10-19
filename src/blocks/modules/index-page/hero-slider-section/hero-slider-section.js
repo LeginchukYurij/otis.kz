@@ -80,6 +80,7 @@ if(document.querySelector('.hero-section__slider.swiper')) {
     slidesPerView: 1,
     loop: true,
     speed: 1000,
+    spaceBetween: 50,
     //   direction: 'vertical',
 
     pagination: {

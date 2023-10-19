@@ -11,12 +11,17 @@
 
   .ic {
     width: 32px;
+    min-width: 32px;
     height: 32px;
     border-radius: 50%;
     background: var(--accent-trs);
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  span {
+    white-space: nowrap;
   }
 
   &:is(a):hover {

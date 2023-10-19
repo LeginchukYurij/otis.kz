@@ -3,10 +3,10 @@
     linear-gradient(130deg, #195043 -3.31%, #a8240b 60.14%);
   background-position: bottom 0 right 0;
   background-repeat: no-repeat;
-
+  background-size: auto 100%;
   padding: 70px 151px 88px 101px;
   border-radius: 30px;
-  height: 235px;
+  min-height: 235px;
   display: flex;
   align-items: center;
   column-gap: 128px;
@@ -34,12 +34,74 @@
   &__form {
     flex: 1;
     display: grid;
-    grid-template-columns: minmax(auto, 225px) minmax(auto, 225px) auto;
+    grid-template-columns: minmax(auto, 225px) minmax(auto, 225px) max-content;
     gap: 11px;
     margin-top: 13px;
 
     .btn {
       width: 100%;
     }
+  }
+}
+
+
+@media (max-width: 1480px) {
+  .get-consult-module {
+    padding: 70px;
+    gap: 60px;
+
+    &__form {
+      grid-template-columns: minmax(auto, 1fr) minmax(auto, 1fr) max-content;
+    }
+  } 
+}
+
+
+@media (max-width: 1320px) {
+  .get-consult-module__text {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 1220px) {
+  .get-consult-module__form {
+    grid-template-columns: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .get-consult-module {
+    width: 100%;
+    left: 0;
+    padding: 40px 15px 20px 15px;
+    flex-direction: column;
+    gap: 19px;
+    background-image: url(../img/circ-mob.webp), linear-gradient(130deg, #195043 -3.31%, #a8240b 60.14%);
+  }
+
+  .get-consult-module__text, .get-consult-module__form {
+    max-width: 100%;
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .get-consult-module__title {
+    margin-bottom: 6px;
+  }
+
+  .get-consult-module__text span {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+  }
+
+  .get-consult-module__form {
+    gap: 6px;
+  }
+
+  .get-consult-module__form .btn {
+    width: 100%;
+    margin-top: 12px;
   }
 }

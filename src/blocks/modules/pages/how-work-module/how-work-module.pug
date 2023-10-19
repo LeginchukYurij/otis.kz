@@ -15,11 +15,12 @@ include ../../../components/txt-btn/txt-btn
 
 
     .how-work__text
-      .how-work__actions 
-        button.how-work__action.active(type="button" data-slide="1") Монтаж оборудования
-        button.how-work__action(type="button" data-slide="2") Мониторинг
-        button.how-work__action(type="button" data-slide="3") Реагирование
-        button.how-work__action(type="button" data-slide="4") Техническая поддержка   
+      .how-work__actions-container.swiper
+        .how-work__actions.swiper-wrapper 
+          button.swiper-slide.how-work__action.active(type="button" data-slide="1") Монтаж оборудования
+          button.swiper-slide.how-work__action(type="button" data-slide="2") Мониторинг
+          button.swiper-slide.how-work__action(type="button" data-slide="3") Реагирование
+          button.swiper-slide.how-work__action(type="button" data-slide="4") Техническая поддержка   
 
 
       .how-work__text-slider.swiper 

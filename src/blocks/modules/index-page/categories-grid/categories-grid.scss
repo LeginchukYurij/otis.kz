@@ -10,6 +10,7 @@
 }
 
 .category-tile {
+  font-family: Russo One;
   padding: 17px 30px 24px;
   border-radius: 30px;
   min-height: 361px;
@@ -21,6 +22,7 @@
   background-position: bottom 0 right 0;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #F8F8F8; 
 
   &__title {
     display: flex;
@@ -46,4 +48,86 @@
   &.light .category-tile__title {
     color: #000;
   }
+}
+
+@media (max-width: 980px) {
+  .categories-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .categories-section {
+    padding-top: 0;
+    padding-bottom: 18px;
+    margin-top: -60px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .category-tile--shortbg {
+    background-size: contain;
+    background-position: bottom 7px right -29px;
+  }
+
+  .categories-grid {
+    grid-template-columns: 100%;
+    gap: 10px;
+   
+    
+
+    li:nth-child(1) .category-tile {
+      background-position: bottom 7px right -40px;
+    }
+
+    li:nth-child(3) .category-tile {
+      background-position: bottom -5px right -19px;
+    }
+    
+    li:nth-child(4) .category-tile {
+      background-position: center bottom -66px;
+    }
+
+    li:nth-child(5) .category-tile {
+      background-position: bottom -16px right -19px;
+    }
+
+    li:nth-child(6) .category-tile {
+      background-position: center bottom -74px;
+    }
+    
+  }
+
+  .category-tile {
+   
+    background-position: center;
+    border-radius: 15px;
+    padding: 17px 26px 19px;
+
+    &__title {
+      font-family: Russo One;
+      font-size: 16px; 
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+      gap: 12px;
+
+      svg {
+        transform: translateY(-2px);
+      }
+    }
+
+    .ic {
+      max-width: 15px;
+    }
+  }
+
+  
+}
+
+@media (max-width: 577px) {
+  .category-tile {
+     min-height: 140px;
+   }
 }

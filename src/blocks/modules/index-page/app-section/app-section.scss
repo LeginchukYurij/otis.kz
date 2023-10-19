@@ -1,9 +1,11 @@
 .app-section {
   background-color: var(--dark-bg-1);
   background-image: url('../img/app-section-shape-bg.webp');
-  background-position: bottom 0 right 0;
+  background-position: top 0 right 0;
   background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
+  overflow: hidden;
 
   .shape {
     position: absolute;
@@ -136,6 +138,12 @@
 
   &__title {
     margin-bottom: 52px;
+
+    i {
+      font-style: normal;
+    }
+
+  
   }
 
   &__subtitle {
@@ -174,6 +182,203 @@
       background-color: var(--accent);
       top: 8px;
       left: 0;
+    }
+  }
+}
+
+
+@media (max-width: 1360px) {
+  .app-section .shape1 {
+    right: -15%;
+  }
+}
+
+@media (max-width: 1280px) {
+  .app-section .shape1 {
+    right: -18%;
+  }
+
+  .app-section__content {
+    padding-top: 150px;
+    padding-bottom: 130px;
+    max-width: 700px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 1098px) {
+  .dot-list {
+    column-count: 1;
+  }
+
+  .app-section__content {
+    max-width: 450px;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+@media (max-width: 980px) {
+  .app-section .shape1 {
+    right: -24%;
+  }
+} 
+
+@media (max-width: 768px) {
+  .app-section {
+    padding-top: 350px;
+    border-radius: 30px;
+    background-image: url(../img/app-section-bg-mob.webp);
+    background-position: top 0 center;
+    background-size: 100% auto;
+  }
+
+  .app-section .shape1 {
+      right: -106px;
+      bottom: auto;
+      top: 74px;
+      width: 116%;
+      max-width: 420px;
+  
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 81%;
+      left: 39%;
+      width: 291.108px;
+      height: 158.013px;
+      border-radius: 291.108px;
+      background: #2C2824;
+      filter: blur(25px);
+    }
+
+    & > img:not(.shape) {
+      height: auto;
+      width: 100%;
+      position: relative;
+
+      
+    }
+  }
+
+  .app-section .shape4 {
+    right: 35%;
+    top: -11.4%;
+
+    img {
+      width: 100px;
+      height: auto;
+    }
+
+    .c {
+      font-size: 10px;
+      line-height: 12px;
+      width: 23.059px;
+      height: 19.216px;
+      top: 1px;
+      right: 27px;
+    }
+  }
+
+  .app-section .shape2 {
+    width: 76.175px;
+    height: 76.175px;
+    top: -11%;
+    left: -2.2%;
+  }
+
+  .app-section .shape5 {
+    width: 105.002px;
+    height: 68.973px; 
+    left: -5.7%;
+    bottom: 16%;
+    border-radius: 15px;
+    padding: 10px 10px;
+
+    span {
+      font-size: 8px;
+      line-height: 10px;
+    }
+
+    svg {
+      margin-bottom: 15px;
+      min-height: 16px;
+      height: 16px;
+      margin-bottom: 6px;
+    }
+  }
+
+  .app-section .shape3 {
+    left: -14%;
+    top: 23.9%;
+    width: 90px;
+    height: auto;
+  }
+
+  .app-section .shape6 .shape6-txt span {
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 10px;
+    line-height: 9px;
+  }
+
+  .app-section .shape6 .shape6-txt {
+    padding-top: 3px;
+  }
+
+  .app-section .shape6 .shape6-txt strong {
+    font-size: 9px; 
+    gap: 2px;
+    line-height: 9px;
+    transform: none;
+    margin-top: -7px;
+
+    svg {
+      width: 9px;
+    }
+  }
+
+  .app-section .shape6 img {
+    width: 35.317px;
+    height: 35.317px; 
+    border-radius: 50%;
+  }
+
+  .app-section .shape6 {
+    max-width: 128.971px; 
+    gap: 7px;
+    padding: 2.34px;
+    border-radius: 20px; 
+  }
+
+  .app-section__content {
+    padding-top: 0;
+    padding-bottom: 47px;
+  }
+
+  .app-section__subtitle {
+    margin-bottom: 0;
+  }
+
+  .app-section__title {
+    margin-bottom: 30px;
+  }
+
+  .app-section__title i, .app-section__title br {
+    display: none;
+  }
+
+  .app-section .apps {
+    display: grid;
+    grid-template-columns: repeat(2, 137px);
+    gap: 7px;
+    margin-top: 19px;
+
+    img {
+      max-width: 100%;
+      display: block;
     }
   }
 }

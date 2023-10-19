@@ -94,3 +94,14 @@
     }
   }
 }
+
+
+@media (max-width: 768px) {
+  .check-wrap {
+    gap: 15px;
+  }
+
+  .check-label label {
+    font-size: 13px; 
+  }
+}

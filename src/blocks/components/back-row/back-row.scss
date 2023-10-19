@@ -30,3 +30,23 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .back-btn {
+    font-size: 14px; 
+  }
+
+  .back-row {
+    top: 60px;
+  }
+
+  .back-btn {
+    line-height: 30px;
+  }
+
+  .w-page .back-row, .filled-page  .back-row {
+    top: 81px;
+  }
+
+
+}

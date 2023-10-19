@@ -1,13 +1,25 @@
-modules.define('partner-section', ['i-bem-dom'], function(provide, bemDom) {
+import Swiper from '../../../../../node_modules/swiper/swiper-bundle.min.mjs';
 
-provide(bemDom.declBlock(this.name, {
-    onSetMod: {
-        js: {
-            inited: function() {
-                
-            }
-        }
+if(document.querySelector('.steps-grid-container')) {
+  let slider = null;
+
+  function initSlider() {
+    if (window.matchMedia('(max-width: 1224px)').matches) {
+      slider = new Swiper('.steps-grid-container', {
+        slidesPerView: 'auto',
+        spaceBetween: 20,
+      });
+    } else {
+      console.log(slider);
+      if(slider) {
+        slider.destroy();
+      }
     }
-}));
+  }
 
-});
+  initSlider();
+
+  window.addEventListener('resize', () => {
+    initSlider();
+  });
+}

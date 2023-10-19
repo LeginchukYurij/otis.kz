@@ -36,3 +36,19 @@
     font-weight: 700;
   }
 }
+
+
+@media (max-width: 768px) {
+
+  .filled-page {
+    padding-top: 120px;
+    padding-bottom: 162px;
+  }
+
+  .filled-page__title {
+    font-family: Russo One;
+    font-weight: 400; 
+  }
+
+
+}

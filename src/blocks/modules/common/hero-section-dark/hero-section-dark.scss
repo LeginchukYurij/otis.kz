@@ -32,3 +32,42 @@
     margin-top: -515px;
   }
 }
+
+@media (max-width: 1024px) {
+  .hero-section-dark__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .hero-section-dark {
+    min-height: auto;
+  }
+
+  .hero-section-dark.xs {
+    min-height: auto;
+  }
+
+  .hero-section-dark + .history-short--full, .hero-section-dark + .sertificate-container {
+    margin-top: -30px;
+  }
+
+  .hero-section-dark {
+    padding-top: 150px;
+    padding-bottom: 71px;
+  }
+
+  .hero-section-dark__title {
+    font-family: Russo One;
+    font-weight: 400; 
+  }
+
+  .hero-section-dark  .back-row {
+    top: 84px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section-dark {
+    padding-top: 122px; 
+  }
+}

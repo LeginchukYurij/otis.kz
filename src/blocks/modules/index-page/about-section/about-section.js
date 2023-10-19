@@ -1,13 +1,24 @@
-modules.define('about-section', ['i-bem-dom'], function(provide, bemDom) {
+import Swiper from '../../../../../node_modules/swiper/swiper-bundle.min.mjs';
 
-provide(bemDom.declBlock(this.name, {
-    onSetMod: {
-        js: {
-            inited: function() {
-                
-            }
-        }
+if(document.querySelector('.reward-row__images.swiper')) {
+
+  new Swiper('.reward-row__images.swiper', {
+    slidesPerView: 5,
+    spaceBetween: 45,
+
+    breakpoints: {
+      320: {
+        slidesPerView: 'auto',
+        spaceBetween: 35
+      },
+      768: {
+        slidesPerView: 5,
+        spaceBetween: 35,
+      },
+      800: {
+        slidesPerView: 5,
+        spaceBetween: 45,
+      }
     }
-}));
-
-});
+  });
+}

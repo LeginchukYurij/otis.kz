@@ -7,4 +7,15 @@ new Swiper('.clients-section__content-slider', {
     nextEl: '.clients-section__content-slider .swiper-button-next.next',
     prevEl: '.clients-section__content-slider .swiper-button-prev.prev',
   },
+
+  breakpoints: {
+    320: {
+      slidesPerView: 'auto',
+      spaceBetween: 9
+    },
+    768: {
+      slidesPerView: 5,
+      spaceBetween: 18,
+    },
+  },
 });

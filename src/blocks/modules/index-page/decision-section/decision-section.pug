@@ -1,4 +1,5 @@
 include ../../../components/brd-link/brd-link
+include ../../../components/txt-link/txt-link
 
 section.decision-section 
   .container 
@@ -10,80 +11,89 @@ section.decision-section
 
         p Мы стремимся сделать безопасность доступной для всех, поэтому предлагаем гибкое ценообразование, различные скидки и акции, чтобы наши клиенты могли выбрать наиболее подходящее решение для своих потребностей и бюджета.
 
+    include ../../../../blocks/components/slider-navs/slider-navs
 
-    ul.tariffs-grid
-      li
-        .tariff-card 
-          img.tariff-card__img(src="img/tariffs/tariff1.webp", alt="#")
-          span.tariff-card__subtitle Тариф
-          h4.tariff-card__title Коттедж
+    .tariffs-grid-container.swiper
+      ul.tariffs-grid.swiper-wrapper
+        li.swiper-slide
+          .tariff-card
+            .tariff-card__img 
+              img(src="img/tariffs/tariff1.webp", alt="#")
+              img(src="img/tariffs/tariff1-min.webp", alt="#").mob
+            span.tariff-card__subtitle Тариф
+            h4.tariff-card__title Коттедж
 
-          .tariff-card__price 
-            span Стоимость оборудования
-            strong от 45 000 тенге
+            .tariff-card__price 
+              span Стоимость оборудования
+              strong от 45 000 тенге
 
-          .tariff-card__price 
-            span Абонентская плата
-            strong от 10 000 тенге/мес
+            .tariff-card__price 
+              span Абонентская плата
+              strong от 10 000 тенге/мес
 
-          +brd-link('#', 'btn')
-            | Подробнее 
+            +brd-link('#', 'btn')
+              | Подробнее 
 
-      li
-        .tariff-card.tariff-card--variable
-          img.tariff-card__img(src="img/tariffs/tariff2.webp", alt="#")
-          span.tariff-card__subtitle Тариф
-          h4.tariff-card__title Квартира
+        li.swiper-slide
+          .tariff-card.tariff-card--variable
+            .tariff-card__img
+              img(src="img/tariffs/tariff2.webp", alt="#")
+              img(src="img/tariffs/tariff1-min.webp", alt="#").mob
+            span.tariff-card__subtitle Тариф
+            h4.tariff-card__title Квартира
 
-          .tariff-card__tabs-container 
-            .tariff-card__tabs-btns 
-              button(type="button" data-tab="1").tariff-card__tabs-btn.active Steamax
-              button(type="button" data-tab="2").tariff-card__tabs-btn Ajax
+            .tariff-card__tabs-container 
+              .tariff-card__tabs-btns 
+                button(type="button" data-tab="1").tariff-card__tabs-btn.active Steamax
+                button(type="button" data-tab="2").tariff-card__tabs-btn Ajax
 
-            .tariff-card__tabs-cotnent(data-tab="1").active 
-              .tariff-card__price 
-                span Стоимость оборудования
-                strong от 45 000 тенге
+              .tariff-card__tabs-cotnent(data-tab="1").active 
+                .tariff-card__price 
+                  span Стоимость оборудования
+                  strong от 45 000 тенге
 
-              .tariff-card__price 
-                span Абонентская плата
-                strong от 10 000 тенге/мес
+                .tariff-card__price 
+                  span Абонентская плата
+                  strong от 10 000 тенге/мес
 
-              +brd-link('#', 'btn')
-                | Подробнее    
+                +brd-link('#', 'btn')
+                  | Подробнее    
 
-            .tariff-card__tabs-cotnent(data-tab="2") 
-              .tariff-card__price 
-                span Стоимость оборудования
-                strong от 50 000 тенге
+              .tariff-card__tabs-cotnent(data-tab="2") 
+                .tariff-card__price 
+                  span Стоимость оборудования
+                  strong от 50 000 тенге
 
-              .tariff-card__price 
-                span Абонентская плата
-                strong от 20 000 тенге/мес   
+                .tariff-card__price 
+                  span Абонентская плата
+                  strong от 20 000 тенге/мес   
 
-              +brd-link('#', 'btn')
-                | Подробнее    
-
-
-         
+                +brd-link('#', 'btn')
+                  | Подробнее    
 
 
-      li
-        .tariff-card 
-          img.tariff-card__img(src="img/tariffs/tariff3.webp", alt="#")
-          span.tariff-card__subtitle Тариф
-          h4.tariff-card__title Бизнес
+          
 
-          .tariff-card__price 
-            span Стоимость оборудования
-            strong от 45 000 тенге
 
-          .tariff-card__price 
-            span Абонентская плата
-            strong от 10 000 тенге/мес
+        li.swiper-slide
+          .tariff-card 
+            .tariff-card__img
+              img(src="img/tariffs/tariff3.webp", alt="#")
+              img(src="img/tariffs/tariff1-min.webp", alt="#").mob
 
-          +brd-link('#', 'btn')
-            | Подробнее             
+            span.tariff-card__subtitle Тариф
+            h4.tariff-card__title Бизнес
+
+            .tariff-card__price 
+              span Стоимость оборудования
+              strong от 45 000 тенге
+
+            .tariff-card__price 
+              span Абонентская плата
+              strong от 10 000 тенге/мес
+
+            +brd-link('#', 'btn')
+              | Подробнее             
 
           
 

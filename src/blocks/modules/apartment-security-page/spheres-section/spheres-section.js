@@ -1,13 +1,36 @@
-modules.define('spheres-section', ['i-bem-dom'], function(provide, bemDom) {
+import Swiper from '../../../../../node_modules/swiper/swiper-bundle.min.mjs';
 
-provide(bemDom.declBlock(this.name, {
-    onSetMod: {
-        js: {
-            inited: function() {
-                
+if (document.querySelector('.includes-cards-container.swiper')) {
+    let slider = null;
+
+    function initSlider() {
+        if (window.matchMedia('(max-width: 1224px)').matches) {
+            slider = new Swiper('.includes-cards-container.swiper', {
+                slidesPerView: 'auto',
+                spaceBetween: 20,
+
+                breakpoints: {
+                    320: {
+                        slidesPerView: 'auto',
+                        spaceBetween: 10,
+                        // autoHeight: true,
+                    },
+                    768: {
+                        spaceBetween: 20,
+                    },
+                }
+            });
+        } else {
+            console.log(slider);
+            if (slider) {
+                slider.destroy();
             }
         }
     }
-}));
 
-});
+    initSlider();
+
+    window.addEventListener('resize', () => {
+        initSlider();
+    });
+}

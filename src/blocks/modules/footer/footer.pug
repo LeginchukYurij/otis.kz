@@ -3,12 +3,133 @@ footer.main-footer.dark
     include ../../modules/get-consult/get-consult    
 
     .main-footer__content 
-      .col 
+      .col.col-contacts
         a(href="/" ).logo 
           img(src="img/svg/logo.svg" width="139" height="27" , alt="Отис логотип") 
         
         include ../../components/tel/tel 
         include ../../components/mail/mail
+
+        .col-desctop 
+          ul.socials
+            li 
+              a(href="#" aria-label="Instagram" title='Instagram').soc
+                img(src="img/svg/inst.svg", alt="Instagram icon" width="16" height="15")
+            li 
+              a(href="#" aria-label="VK" title='VK').soc
+                img(src="img/svg/vk.svg", alt="VK icon" width="17" height="11")
+            li 
+              a(href="#" aria-label="Viber" title='Viber').soc
+                img(src="img/svg/viber.svg", alt="Viber icon" width="16" height="16")
+            li 
+              a(href="#" aria-label="Facebook" title='Facebook').soc
+                img(src="img/svg/fb.svg", alt="Facebook icon" width="9" height="16")
+
+            li 
+              a(href="#" aria-label="Twitter" title='Twitter').soc
+                img(src="img/svg/tw.svg", alt="Twitter icon" width="16" height="13")              
+
+          .apps 
+            a(href="#" aria-label="AppStore")
+              img(src="img/svg/appstore.svg", alt="#" width="129" height="38") 
+
+            a(href="#" aria-label="GooglePlay")
+              img(src="img/svg/googleplay.svg", alt="#" width="129" height="38")  
+
+
+          .copyright 
+            span © 2019 Все права защищены
+            a(href="#") Разрабокта сайта
+               
+
+
+      .col.main-cats
+        ul.menu-list
+          li 
+            a(href="#").fat  Для квартир 
+          li 
+            a(href="#").fat Для домов 
+          li 
+            a(href="#").fat Для бизнеса
+          li 
+            a(href="#").fat Оплата
+
+      .col.another-cats
+        .menu-list__head 
+          a(href="#").fat  Компания
+
+          button.menu-list__collapse 
+            <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.25446 9V1M5.25446 1L9.25446 5M5.25446 1L1.25446 5" stroke="#C4C4C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg> 
+
+        ul.menu-list
+          li 
+            a(href="#") О компании
+          li 
+            a(href="#")  История
+          li 
+            a(href="#")  Лицензии и Сертификаты
+          li 
+            a(href="#")  Вакансии
+          li 
+            a(href="#")  Новости
+          li 
+            a(href="#")  Отзывы клиентов
+          li 
+            a(href="#")  Контакты
+
+
+      .col.another-cats
+        .menu-list__head 
+          a(href="#").fat  Клиентам
+
+          button.menu-list__collapse 
+            <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.25446 9V1M5.25446 1L9.25446 5M5.25446 1L1.25446 5" stroke="#C4C4C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg> 
+
+        ul.menu-list
+          li 
+            a(href="#") Как работает система
+          li 
+            a(href="#")  Служба контроля качества
+          li 
+            a(href="#")  Приложение ОТИС личный кабинет
+          li 
+            a(href="#")  Инструкции пользователя
+          li 
+            a(href="#")  Справочник абонента
+          li 
+            a(href="#")  Памятка по оплате
+          li 
+            a(href="#")  Вопросы и ответы
+          li 
+            a(href="#")  Статьи
+          li 
+            a(href="#")  Договор публичной оферты
+
+      .col.another-cats 
+        .menu-list__head 
+          a(href="#").fat  Другое
+
+          button.menu-list__collapse 
+            <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.25446 9V1M5.25446 1L9.25446 5M5.25446 1L1.25446 5" stroke="#C4C4C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg> 
+            
+        ul.menu-list
+          li 
+            a(href="#") Aкции
+          li 
+            a(href="#")  Партнерам
+          li 
+            a(href="#")  Оборудование
+          li 
+            a(href="#")  Трудовые догворы
+                
+
+      .col.col-contacts.col-mob
 
         ul.socials
           li 
@@ -39,73 +160,4 @@ footer.main-footer.dark
         .copyright 
           span © 2019 Все права защищены
           a(href="#") Разрабокта сайта
-               
-
-
-      .col 
-        ul.menu-list
-          li 
-            a(href="#").fat  Для квартир 
-          li 
-            a(href="#").fat Для домов 
-          li 
-            a(href="#").fat Для бизнеса
-          li 
-            a(href="#").fat Оплата
-
-      .col 
-        ul.menu-list
-          li 
-            a(href="#").fat  Компания 
-          li 
-            a(href="#") О компании
-          li 
-            a(href="#")  История
-          li 
-            a(href="#")  Лицензии и Сертификаты
-          li 
-            a(href="#")  Вакансии
-          li 
-            a(href="#")  Новости
-          li 
-            a(href="#")  Отзывы клиентов
-          li 
-            a(href="#")  Контакты
-
-
-      .col
-        ul.menu-list
-          li 
-            a(href="#").fat  Клиентам 
-          li 
-            a(href="#") Как работает система
-          li 
-            a(href="#")  Служба контроля качества
-          li 
-            a(href="#")  Приложение ОТИС личный кабинет
-          li 
-            a(href="#")  Инструкции пользователя
-          li 
-            a(href="#")  Справочник абонента
-          li 
-            a(href="#")  Памятка по оплате
-          li 
-            a(href="#")  Вопросы и ответы
-          li 
-            a(href="#")  Статьи
-          li 
-            a(href="#")  Договор публичной оферты
-
-      .col
-        ul.menu-list
-          li 
-            a(href="#").fat  Другое
-          li 
-            a(href="#") Aкции
-          li 
-            a(href="#")  Партнерам
-          li 
-            a(href="#")  Оборудование
-          li 
-            a(href="#")  Трудовые догворы
-                
+                        

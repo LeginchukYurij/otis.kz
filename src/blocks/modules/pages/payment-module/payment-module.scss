@@ -44,6 +44,23 @@
 
   .qr {
     margin-top: 40px;
+    border-radius: 30px;
+    background: #FFF; 
+    max-width: 359.596px;
+    width: 100%;
+    height: 289.998px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; 
+    padding: 16px 0 12px;
+
+    img {
+      max-width: 100%;
+      display: block;
+      height: fit-content;
+      max-height: 100%;
+    }
   }
 }
 
@@ -55,4 +72,80 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width: 1124px) {
+  .payment-container {
+    grid-template-columns: 38.2% 1fr;
+    column-gap: 60px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .payment-container {
+    grid-template-columns: 100%;
+    row-gap: 35px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .payment-method__head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .payment-methods__row {
+    gap: 9px;
+    margin-top: 18px;
+  }
+
+  .payment-method .qr {
+    display: flex;
+    justify-content: center;
+    margin-top: 22px;
+    padding: 20px 0 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+    img {
+      height: auto;
+    }
+  }
+
+  .payment-container {
+    margin-top: 23px;
+  }
+
+  .payment-methods {
+    gap: 31px;
+  }
+
+  .payment-container .payment-faq {
+    margin-top: 6px;
+  }
+
+  .payment-page.filled-page {
+    padding-bottom: 184px;
+  }
+}
+
+@media (max-width: 577px) {
+  .payment {
+    width: 50.298px;
+    height: 43.549px; 
+    border-radius: 10px; 
+    padding: 8px 7px;
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  .payment-method__head  .filled-btn {
+    width: 100%;
+  }
 }

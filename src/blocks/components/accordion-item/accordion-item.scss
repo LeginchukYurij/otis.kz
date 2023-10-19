@@ -40,9 +40,10 @@
       align-items: center;
       justify-content: center;
       border: 2px solid #9A9A9A;
+      transition: transform .3s ease;
 
       svg {
-        transform: translateX(1px);
+        // transform: translateX(1px);
       }
 
       svg path {
@@ -52,7 +53,7 @@
   }
 
   &__body {
-    display: none;
+    // display: none;
     padding-top: 3px;
     padding-bottom: 42px;
     
@@ -117,17 +118,23 @@
     }
   }
 
-  &.opened {
+  &__body-container {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .3s ease;
+
+    &.container--active {
+      max-height: 100%;
+    }
+  }
+
+  &.active {
     .accordion-item__head .arr {
       transform: rotate(-180deg);
 
       svg {
-        transform: translateX(-1px);
+        // transform: translateX(-1px);
       }
-    }
-
-    .accordion-item__body {
-      display: block;
     }
   }
 }
@@ -143,4 +150,104 @@
 .vacancy-list {
   display: grid;
   gap: 20px;
+}
+
+
+@media (max-width: 1124px) {
+  .vacancy-cols {
+    grid-template-columns: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .accordion-item__head {
+    flex-direction: column;
+    position: relative;
+    align-items: flex-start;
+    padding-top: 17px;
+    padding-bottom: 16px;
+    gap: 0;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    span {
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 23px;
+    }
+
+    .arr  {
+      position: absolute;
+      top: 50%;
+      transform: rotate(0)  translateY(-50%);
+      right: 20px;
+      transform-origin: center 0;
+    }
+  }
+
+  .accordion-item.active .accordion-item__head .arr {
+    transform: rotate(-180deg) translateY(-50%);
+  }
+
+  .accordion-item__head span {
+    margin-left: 0;
+    margin-top: -6px;
+  }
+
+  .vacancy-cols {
+    margin-top: 30px;
+  }
+
+  .accordion-item {
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 15px; 
+  }
+
+  .accordion-item__body-footer {
+    flex-direction: column;
+  }
+
+  .vacancy-list, .vacancy-cols {
+    gap: 10px;
+  }
+
+  .accordion-item__body ul li {
+    padding-left: 15px;
+  }
+
+  .accordion-item__body ul {
+    margin-bottom: 24px;
+  }
+
+  .accordion-item__body-footer {
+    align-items: flex-start;
+    gap: 30px;
+
+    .tel span {
+      white-space: nowrap;
+      margin-top: 2px;
+    }
+
+    .brd-btn {
+      width: 100%;
+    }
+  }
+
+  .accordion-item__body-footer {
+    margin-top: 32px;
+  }
+
+  .accordion-item__body {
+    padding-bottom: 24px;
+  }
+
 }

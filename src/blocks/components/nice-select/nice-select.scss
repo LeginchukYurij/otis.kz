@@ -79,3 +79,20 @@
     color: #fff;
   }
 }
+
+
+@media (max-width: 1068px) {
+  .nice-select .nice-select-dropdown {
+    top: calc(100% + 6px);
+    padding: 10px 19px 10px 15px;
+    border-radius: 10px; 
+  }
+
+  .nice-select .option {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; 
+  }
+    
+}
