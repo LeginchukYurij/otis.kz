@@ -1,14 +1,37 @@
+@media (min-width: 980px) {
+  .tab {
+    &-actions {
+      gap: 39px;
+      flex-wrap: wrap;
+      
+    }
+
+    &-action  {
+      margin-right: 0 !important;
+    }
+  }
+}
+
 .tab {
+
+  &-actions-container {
+    margin-bottom: 67px;
+    border-bottom: 1px solid #C4C4C4;
+    margin-top: 52px;
+    width: fit-content;
+    margin-left: 0;
+  }
+
   &-actions  {
     display: flex;
-    flex-wrap: wrap;
-    gap: 39px;
-    border-bottom: 1px solid #C4C4C4;
+    
+    
+
     width: fit-content;
-    margin-bottom: 40px;
+    // margin-bottom: 40px;
     padding-bottom: 4px;
-    margin-bottom: 67px;
-    margin-top: 52px;
+    
+  
   }
   
   &-action {
@@ -24,6 +47,7 @@
     border: none;
     cursor: pointer;
     text-decoration: none;
+    width: auto;
   
     &:hover {
       color: var(--accent);
@@ -36,7 +60,7 @@
       &:after {
         content: "";
         position: absolute;
-        top: calc(100% + 4px);
+        top: calc(100% + 3px);
         left: 0;
         width: 100%;
         height: 1px;
@@ -107,4 +131,88 @@
   margin-right: auto;
   display: flex;
   margin-top: 88px;
+}
+
+
+@media (max-width: 1280px) {
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 980px) {
+  .tab-actions-container {
+    width: calc(100% + 30px);
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .products-grid {
+    grid-template-columns: 100%;
+    gap: 10px;
+  }
+
+  .product-card {
+    min-height: auto;
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    gap: 28px;
+    // align-items: center;
+    padding: 22px 22px 22px 22px;
+    border-radius: 10px; 
+  }
+
+  .product-card__txt {
+    margin-top: 4px;
+  }
+
+  .product-card__img {
+    display: block;
+    max-width: 100%;
+    margin-bottom: 0;
+  }
+
+  .equipment .w-page__title {
+    margin-bottom: 18px;
+  }
+
+  .tab-actions-container {
+    margin-bottom: 34px;
+    margin-top: 17px;
+  }
+
+  .product-card .lbl {
+    font-size: 11px
+  }
+
+  .product-card strong {
+    font-family: Russo One;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; 
+  }
+
+  .equipment-page-module .btn {
+    margin-top: 50px;
+  }
+
+  .equipment.w-page {
+    padding-bottom: 192px;
+  }
+
+}
+
+@media (max-width: 577px) {
+  .equipment-page-module .btn {
+    width: 100%;
+  }
 }

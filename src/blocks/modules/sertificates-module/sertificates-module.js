@@ -10,7 +10,7 @@ if (document.querySelector('.sertificates__secondary-list-container')) {
                 spaceBetween: 63,
 
                 breakpoints: {
-                    320: {
+                    300: {
                         slidesPerView: 'auto',
                         spaceBetween: 10
                     },
@@ -24,6 +24,11 @@ if (document.querySelector('.sertificates__secondary-list-container')) {
                     }
                 }
             });
+
+            setTimeout(() => {
+                slider.update();
+            }, 500);
+
         } else {
 
             if (slider) {

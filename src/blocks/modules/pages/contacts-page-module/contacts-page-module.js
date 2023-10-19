@@ -1,26 +1,55 @@
 import { load } from '@2gis/mapgl';
 
 
-if(document.querySelector('.contact-page__map')) {
+if (document.querySelector('.contact-page__map')) {
   function resizeMapContainer() {
     const targetWidth = window.innerWidth / 2;
 
     const mapContainer = document.querySelector('.contact-page__map');
 
-    if(mapContainer) {
+    if (mapContainer) {
       mapContainer.style.width = targetWidth + 'px';
     }
   }
 
-  resizeMapContainer();
+  if (window.matchMedia('max-width: 980px')) {
+    resizeMapContainer();
+  }
 
   window.addEventListener('resize', () => {
-    resizeMapContainer();
+    if (window.matchMedia('max-width: 980px')) {
+      resizeMapContainer();
+    }
   });
 }
 
 
-if(document.querySelector('#map')) {
+const collapseButtons = document.querySelectorAll('.managers-contacts-head');
+
+
+if (collapseButtons.length) {
+  collapseButtons.forEach((btn) => {
+    btn.addEventListener('click', function () {
+      const container = this.closest('.managers-contacts');
+      const list = container.querySelector('.ul-container');
+
+
+      if (list.classList.contains('container--active')) {
+        container.classList.remove('active');
+        list.classList.remove('container--active');
+        list.style.maxHeight = 0;
+      } else {
+        container.classList.add('active');
+        list.classList.add('container--active');
+        list.style.maxHeight = list.scrollHeight + 'px';
+      }
+    });
+  });
+}
+
+
+
+if (document.querySelector('#map')) {
   async function start() {
     const mapglAPI = await load();
 

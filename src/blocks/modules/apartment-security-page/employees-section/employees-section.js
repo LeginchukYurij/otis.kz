@@ -90,6 +90,10 @@ if (document.querySelector('.list-slider-container')) {
         slidesPerView: 'auto',
         spaceBetween: 13,
       });
+
+      setTimeout(() => {
+        slider.update();
+      }, 500);
     } else {
       if (slider) {
         slider.destroy();

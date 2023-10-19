@@ -10,7 +10,7 @@ if (document.querySelector('.includes-cards-container.swiper')) {
                 spaceBetween: 20,
 
                 breakpoints: {
-                    320: {
+                    300: {
                         slidesPerView: 'auto',
                         spaceBetween: 10,
                         // autoHeight: true,
@@ -20,6 +20,11 @@ if (document.querySelector('.includes-cards-container.swiper')) {
                     },
                 }
             });
+
+            setTimeout(() => {
+                slider.update();
+            }, 500);
+
         } else {
             console.log(slider);
             if (slider) {

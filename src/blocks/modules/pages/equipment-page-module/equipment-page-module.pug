@@ -1,12 +1,13 @@
 include ../../../components/filled-btn/filled-btn
 
 .equipment-page-module
-  .tab-actions 
-    a(href="#").tab-action.active  Все
-    a(href="#").tab-action  Контрольные панели 
-    a(href="#").tab-action  Охранные датчики
-    a(href="#").tab-action Система "Умный дом"
-    a(href="#").tab-action  Видеонаблюдение
+  .tab-actions-container.swiper
+    .tab-actions.swiper-wrapper
+      a(href="#").swiper-slide.tab-action.active  Все
+      a(href="#").swiper-slide.tab-action  Контрольные панели 
+      a(href="#").swiper-slide.tab-action  Охранные датчики
+      a(href="#").swiper-slide.tab-action Система "Умный дом"
+      a(href="#").swiper-slide.tab-action  Видеонаблюдение
 
 
   ul.products-grid 
@@ -163,4 +164,4 @@ include ../../../components/filled-btn/filled-btn
 
 
   +filled-btn('accent accent-shadow btn', 'button')
-      | Показать все 1230м отзывов      
+      | Показать все 1230 отзывов      

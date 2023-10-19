@@ -22,7 +22,8 @@ import '%modules%/apartment-security-page/faq-section/faq-section';
 import '%modules%/pages/how-work-module/how-work-module';
 import '%modules%/pages/shares-page-module/shares-page-module';
 import '%modules%/pages/contacts-page-module/contacts-page-module';
-
+import '%modules%/pages/app-page-module/app-page-module';
+import '%modules%/pages/equipment-page-module/equipment-page-module';
 
 
 import '%modules%/sertificates-module/sertificates-module';

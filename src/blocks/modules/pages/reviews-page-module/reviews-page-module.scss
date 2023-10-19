@@ -17,8 +17,92 @@
 
 .page.reviews {
   background-position: top 76px right 0;
+  background-repeat: no-repeat;
 }
 
 .reviews {
   background: #EFEFEF; 
+}
+
+.company-slide .m {
+  display: none;
+}
+
+@media (max-width: 1420px) {
+  .reviews-module__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .page.reviews  {
+    background-size: contain;
+
+    .w-page__subtitle {
+      max-width: 700px;
+    }
+  }
+}
+
+@media (max-width: 1320px) {
+  .reviews-module__grid  .company-slide {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 980px) {
+  .reviews-module__grid {
+    grid-template-columns: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .page.reviews {
+    background-position: top 58px right 0;
+    background-repeat: no-repeat;
+  }
+
+  .reviews-module {
+    margin-top: 40px;
+  }
+
+  .reviews-module__grid {
+    gap: 14px;
+  }
+
+  .company-slide .m {
+    display: block;
+    font-family: Russo One;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+  }
+
+  .reviews-module__grid  .company-slide {
+    padding-bottom: 27px;
+  }
+  
+  .reviews-module__grid  .company-slide .company-slide__text strong {
+    display: none;
+  }
+
+  .reviews-module__grid  .company-slide .company-slide__img {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+  }
+
+  .reviews-module .btn {
+    margin-top: 42px;
+    width: 100%;
+  }
+
+  .page.reviews {
+    padding-bottom: 190px;
+  }
+
+  .page.reviews {
+    background-size: 557px;
+}
+
+
 }

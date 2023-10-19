@@ -41,11 +41,13 @@ import Swiper from '../../../../../node_modules/swiper/swiper-bundle.min.mjs';
       breakpoints: {
         320: {
           slidesPerView: 'auto',
-          spaceBetween: 22
+          spaceBetween: 22,
+
         },
         768: {
           slidesPerView: 'auto',
           spaceBetween: 39,
+
         },
       },
 
