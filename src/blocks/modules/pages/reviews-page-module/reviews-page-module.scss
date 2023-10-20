@@ -28,6 +28,10 @@
   display: none;
 }
 
+.company-slide {
+  cursor: pointer;
+}
+
 @media (max-width: 1420px) {
   .reviews-module__grid {
     grid-template-columns: repeat(2, 1fr);
@@ -68,22 +72,13 @@
     gap: 14px;
   }
 
-  .company-slide .m {
-    display: block;
-    font-family: Russo One;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 23px;
-  }
 
   .reviews-module__grid  .company-slide {
     padding-bottom: 27px;
   }
   
-  .reviews-module__grid  .company-slide .company-slide__text strong {
-    display: none;
-  }
+
+
 
   .reviews-module__grid  .company-slide .company-slide__img {
     display: flex;
@@ -105,4 +100,19 @@
 }
 
 
+}
+
+@media (max-width: 577px) {
+  .reviews-module__grid  .company-slide .company-slide__text strong {
+    display: none;
+  }
+
+  .company-slide .m {
+    display: block;
+    font-family: Russo One;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+  }
 }

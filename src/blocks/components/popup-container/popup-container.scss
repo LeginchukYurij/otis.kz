@@ -1,3 +1,7 @@
+[data-trigger-modal] {
+  cursor: pointer;
+}
+
 .popup {
   --pt: 15vh;
   --pb: 15px;
@@ -31,6 +35,25 @@
     border-radius: 30px;
     transform: translateY(100px);
     transition: all 0 ease-in-out;
+
+    scrollbar-width: thin;
+    scrollbar-color: #6969dd #e0e0e0;
+    scrollbar-width: thin;
+
+    &::-webkit-scrollbar {
+      width: 5px;
+      transform: translateX(-10px);
+      background-color: none;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: none;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+      background-color: rgba(46, 46, 47, 0.8);
+    }
   }
 
   &.active {
@@ -55,4 +78,45 @@
   background: none;
   border: none;
   cursor: pointer;
+
+  &:hover {
+    svg path {
+      fill: var(--accent);
+    }
+  }
+
+  &:active {
+    svg path {
+      fill: #cb6600;
+    }
+  }
+
+  &:disabled {
+    svg path {
+      fill: #cb6600;
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .popup__inner {
+    height: calc(100 * var(--vh, 1vh));
+    min-height: calc(100 * var(--vh, 1vh));
+    border-radius: 0;
+  }
+
+  .popup {
+    padding: 0;
+  }
+
+  .close-popup {
+    top: 16px;
+    right: 14px;
+  }
+
+  .popup {
+    align-items: flex-start;
+    background: none;
+  }
 }

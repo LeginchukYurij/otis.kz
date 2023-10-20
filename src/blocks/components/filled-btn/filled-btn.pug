@@ -1,7 +1,11 @@
-mixin filled-btn(cls, tp, cb) 
+mixin filled-btn(cls, tp, cb, modal) 
   if cb 
     button(type=tp class='filled-btn ' + cls data-trigger-modal='callback')
       block
+  else if modal
+    button(type=tp data-trigger-modal=modal class='filled-btn ' + cls)
+      block    
+
   else 
     button(type=tp class='filled-btn ' + cls)
-      block    
+      block

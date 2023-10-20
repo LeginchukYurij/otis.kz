@@ -1,5 +1,6 @@
 extends ../layouts/default
 include ../../blocks/modules/common/hero-section-dark/hero-section-dark
+include ../../blocks/components/popup-container/popup-container
 
 block variables
 	- const title = "Сертификаты | Отис"
@@ -15,6 +16,9 @@ block content
 
 
 	include ../../blocks/modules/footer/footer
+
+	+popupContainer('sertificates', 'sertificates-popup')
+		include ../../blocks/modules/popups/sertificates-popup/sertificates-popup
 
 block scripts
 	script(src="js/vendor.js")

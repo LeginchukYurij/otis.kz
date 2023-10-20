@@ -27,3 +27,7 @@ import '%modules%/pages/equipment-page-module/equipment-page-module';
 
 
 import '%modules%/sertificates-module/sertificates-module';
+
+
+import '%modules%/popups/review-popup/review-popup';
+import '%modules%/popups/sertificates-popup/sertificates-popup';

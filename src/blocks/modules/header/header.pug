@@ -86,7 +86,7 @@ header.main-header.dark.main-header-d
 
         .tel-action-drop 
           span Телефон в Алматы
-          a(href="tel: +7 (727) 2 58 11 55") +7 (727) 2 58 11 55
+          a(href="tel: +7 (727) 2 58 11 55" aria-label="Позвонить по телефону") +7 (727) 2 58 11 55
 
           .tel-action-drop__footer 
             button(type="button").js-change-city Изменить город 
@@ -113,7 +113,7 @@ header.main-header.dark.main-header-d
         option(value="Талдыкорган") Талдыкорган
         option(value="Петропавловск ") Петропавловск 
 
-      +brd-btn 
+      +brd-btn(' ', 'callback') 
         | Заказать звонок
 
       +nice-select('lang', 'lang-switcher value-placeholder')

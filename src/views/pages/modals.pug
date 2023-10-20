@@ -1,0 +1,50 @@
+extends ../layouts/default
+
+include ../../../src/blocks/components/brd-btn/brd-btn
+include ../../blocks/components/popup-container/popup-container
+
+block variables
+  - const title = "Все модалки | Отис"
+
+block content
+  include ../../blocks/modules/header/header
+
+  main.page(style="padding-top: 160px; padding-bottom: 360px") 
+    +popupContainer('product', 'product-popup')
+      include ../../blocks/modules/popups/product-popup/product-popup
+
+    +popupContainer('review', 'reviews-popup')
+      include ../../blocks/modules/popups/review-popup/review-popup
+
+    +popupContainer('sertificates', 'sertificates-popup')
+      include ../../blocks/modules/popups/sertificates-popup/sertificates-popup  
+
+    .container 
+      +brd-btn(' ', 'callback') 
+        | Заказать звонок 
+
+      <br>
+
+      +brd-btn(' ', 'thanks') 
+        | Спасибо
+
+      <br>
+
+      +brd-btn(' ', 'product') 
+        | Продукт  
+
+      <br>
+
+      +brd-btn(' ', 'review') 
+        | Отзывы   
+
+      <br>
+
+      +brd-btn(' ', 'sertificates') 
+        | Сертификаты  
+
+  include ../../blocks/modules/footer/footer
+
+block scripts
+  script(src="js/vendor.js")
+  script(src="js/main.js")

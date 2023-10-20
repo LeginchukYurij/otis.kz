@@ -1,0 +1,181 @@
+.sertificates-popup-inner {
+  border-radius: 30px;
+  background: #2E2E2F;
+  position: relative;
+}
+
+.sertificates-popup-inner .sertificates-popup {
+  background-image: url('../img/sertificates/sertificates-shine-big.webp');
+    background-position: top 0 center;
+    background-repeat: no-repeat;
+}
+
+.sertificates-popup-inner {
+  background-image: url('../img/sertificates/popup-bg.webp');
+    background-position: top 0 center;
+    background-repeat: no-repeat;
+}
+
+.sertificates-popup {
+  .popup__inner {
+    max-width: 933px;
+  }
+  
+   .close-popup {
+    z-index: 2;
+  }
+  
+  &__card {
+    padding: 58px 161px 56px 161px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+  
+  &__card-img  {
+    margin-bottom: 42px;
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  &__card-text {
+    text-align: center;
+    strong {
+      font-family: Russo One;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 32px;
+      display: block;
+      margin-bottom: 13px;
+    }
+
+    p {
+      text-align: center;
+      font-family: Montserrat;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px; 
+      margin: 0;
+    }
+  }
+}
+
+.r-nav {
+  width: 55px;
+  height: 55px; 
+  background-color: #444;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 44%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  z-index: 2;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.20);
+    opacity: 1;
+  }
+
+  &:active {
+    background-color: #363636;
+  }
+
+  &:disabled {
+    background-color: #363636;
+    pointer-events: none;
+
+    svg path {
+      stroke: #9B9B9B;
+    }
+  }
+
+  &.prev {
+    left: 38px;
+   
+  }
+
+  &.next {
+    right: 38px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .sertificates-popup-inner {
+    height: 100%;
+    border-radius: 0;
+    
+  }
+
+  .sertificates-popup__card {
+    padding: 44px 33px 59px 33px;
+  }
+
+  .sertificates-popup__card-text {
+    strong {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 25px;
+    }
+
+    p {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 25px; 
+    }
+  }
+
+  .sertificates-popup__card-img img {
+    border-radius: 20px; 
+  }
+
+  .sertificates-popup__card-img {
+    margin-bottom: 26px;
+  }
+
+  .sertificates-popup__card-text strong {
+    margin-bottom: 10px;
+  }
+
+  .sertificates-popup-inner {
+    background-image: url(../img/sertificates/popup-bg-mob.webp);
+    background-position: top 0 center;
+    background-size: 100% auto;
+  }
+
+  .sertificates-popup-inner .sertificates-popup {
+    background-image: url(../img/sertificates/sertificates-shine-big-mob.webp);
+    background-size: 100% auto;
+  }
+
+}
+
+@media (max-width: 577px) {
+  .r-nav {
+    width: 38.055px;
+    height: 38.055px; 
+    top: 33%;
+  }
+
+  .r-nav.prev {
+    left: 3%;
+  }
+
+  .r-nav.next {
+    right: 3%;
+  }
+}

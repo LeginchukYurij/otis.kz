@@ -1,5 +1,6 @@
 extends ../layouts/default
 include ../../blocks/components/back-row/back-row
+include ../../blocks/components/popup-container/popup-container
 
 block variables
 	- const title = "Отзывы | Отис"
@@ -19,6 +20,9 @@ block content
 
 
 	include ../../blocks/modules/footer/footer
+
+	+popupContainer('review', 'reviews-popup')
+		include ../../blocks/modules/popups/review-popup/review-popup
 
 block scripts
 	script(src="js/vendor.js")

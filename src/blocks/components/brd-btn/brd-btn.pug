@@ -1,4 +1,8 @@
-mixin brd-btn(cls)
-  button(type="button" class="brd-btn " + cls)
-    block
-    
+mixin brd-btn(cls, modal)
+  if modal
+    button(type="button" data-trigger-modal=modal class="brd-btn " + cls)
+      block
+  else
+    button(type="button" class="brd-btn " + cls)
+      block 
+      
