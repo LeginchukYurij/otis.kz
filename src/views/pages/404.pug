@@ -1,0 +1,27 @@
+extends ../layouts/default
+
+
+block variables
+  - const title = "404 | Отис"
+
+block content
+  include ../../blocks/modules/header/header
+  include ../../blocks/components/filled-link/filled-link
+
+  main.page-404.dark
+    .page-404__inner 
+      .title-404-wrap
+        img(src="img/cam404.webp", alt="#")
+        h1.title-404 404
+
+      p Этой страницы больше не существует
+
+      +filled-btn('accent accent-shadow btn', '/')
+        | На главную 
+
+
+    
+
+block scripts
+  script(src="js/vendor.js")
+  script(src="js/main.js")

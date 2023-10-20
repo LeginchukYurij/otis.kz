@@ -81,19 +81,19 @@
 
   &:hover {
     svg path {
-      fill: var(--accent);
+      fill: var(--accent) !important;
     }
   }
 
   &:active {
     svg path {
-      fill: #cb6600;
+      fill: #cb6600 !important;
     }
   }
 
   &:disabled {
     svg path {
-      fill: #cb6600;
+      fill: #cb6600 !important;
     }
   }
 }

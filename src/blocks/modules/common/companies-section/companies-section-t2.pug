@@ -1,4 +1,8 @@
 include ../../../components/txt-link/txt-link
+include ../../../components/popup-container/popup-container
+
++popupContainer('review', 'reviews-popup')
+    include ../../popups/review-popup/review-popup   
 
 section.companies-section.companies-section--t2 
   .container 
@@ -9,7 +13,7 @@ section.companies-section.companies-section--t2
 
     .companies-section__content-slider.swiper 
       .swiper-wrapper 
-        .swiper-slide.company-slide
+        .swiper-slide.company-slide(data-trigger-modal="review" data-num="1")
           .company-slide__img
             img(src="img/reviews/1.webp", alt="#" width="107" height="148")
 
@@ -17,7 +21,7 @@ section.companies-section.companies-section--t2
             strong ТОО "INTERTEACH"
             p Благодаря вашим сотрудникам наша организация избегает различного рада негативных последствий, не только таких как кражи, проникновение на территорию посторонних лиц, но и возникновение пожара
       
-        .swiper-slide.company-slide
+        .swiper-slide.company-slide(data-trigger-modal="review" data-num="2")
           .company-slide__img
             img(src="img/reviews/2.webp", alt="#" width="107" height="148")
 
@@ -25,7 +29,7 @@ section.companies-section.companies-section--t2
             strong ТОО "Займер"
             p В действиях охранной службы мы ценим прежде всего хороший уровень подготовки, ответственное отношение к обязанностям, умение правильно оценивать обстановку и незамедлительно реагировать на возникшие угрозы
 
-        .swiper-slide.company-slide
+        .swiper-slide.company-slide(data-trigger-modal="review" data-num="3")
           .company-slide__img
             img(src="img/reviews/3.webp", alt="#" width="107" height="148")
 
@@ -33,7 +37,7 @@ section.companies-section.companies-section--t2
             strong ТОО "INTERTEACH"
             p  Благодаря вашим сотрудникам наша организация избегает различного рада негативных последствий, не только таких как кражи, проникновение на территорию посторонних лиц, но и возникновение пожара    
 
-        .swiper-slide.company-slide
+        .swiper-slide.company-slide(data-trigger-modal="review" data-num="4")
           .company-slide__img
             img(src="img/reviews/1.webp", alt="#" width="107" height="148")
 
@@ -41,7 +45,7 @@ section.companies-section.companies-section--t2
             strong ТОО "INTERTEACH"
             p Благодаря вашим сотрудникам наша организация избегает различного рада негативных последствий, не только таких как кражи, проникновение на территорию посторонних лиц, но и возникновение пожара
       
-        .swiper-slide.company-slide
+        .swiper-slide.company-slide(data-trigger-modal="review" data-num="5")
           .company-slide__img
             img(src="img/reviews/2.webp", alt="#" width="107" height="148")
 
@@ -49,7 +53,32 @@ section.companies-section.companies-section--t2
             strong ТОО "Займер"
             p В действиях охранной службы мы ценим прежде всего хороший уровень подготовки, ответственное отношение к обязанностям, умение правильно оценивать обстановку и незамедлительно реагировать на возникшие угрозы
 
-        .swiper-slide.company-slide
+        .swiper-slide.company-slide(data-trigger-modal="review" data-num="6")
+          .company-slide__img
+            img(src="img/reviews/3.webp", alt="#" width="107" height="148")
+
+          .company-slide__text
+            strong ТОО "INTERTEACH"
+            p  Благодаря вашим сотрудникам наша организация избегает различного рада негативных последствий, не только таких как кражи, проникновение на территорию посторонних лиц, но и возникновение пожара    
+
+
+        .swiper-slide.company-slide(data-trigger-modal="review" data-num="7")
+          .company-slide__img
+            img(src="img/reviews/1.webp", alt="#" width="107" height="148")
+
+          .company-slide__text
+            strong ТОО "INTERTEACH"
+            p Благодаря вашим сотрудникам наша организация избегает различного рада негативных последствий, не только таких как кражи, проникновение на территорию посторонних лиц, но и возникновение пожара
+      
+        .swiper-slide.company-slide(data-trigger-modal="review" data-num="8")
+          .company-slide__img
+            img(src="img/reviews/2.webp", alt="#" width="107" height="148")
+
+          .company-slide__text
+            strong ТОО "Займер"
+            p В действиях охранной службы мы ценим прежде всего хороший уровень подготовки, ответственное отношение к обязанностям, умение правильно оценивать обстановку и незамедлительно реагировать на возникшие угрозы
+
+        .swiper-slide.company-slide(data-trigger-modal="review" data-num="9")
           .company-slide__img
             img(src="img/reviews/3.webp", alt="#" width="107" height="148")
 
