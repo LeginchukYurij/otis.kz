@@ -74,13 +74,14 @@ function startAnimation(activeSlide) {
   );
 }
 
-if(document.querySelector('.hero-section__slider.swiper')) {
+if (document.querySelector('.hero-section__slider.swiper')) {
 
   new Swiper('.hero-section__slider', {
     slidesPerView: 1,
     loop: true,
     speed: 1000,
     spaceBetween: 50,
+    autoHeight: true,
     //   direction: 'vertical',
 
     pagination: {
@@ -95,8 +96,7 @@ if(document.querySelector('.hero-section__slider.swiper')) {
     on: {
       afterInit: function (swiper) {
         let activeSlide = document.querySelector(
-          `.hero-section__slider .swiper-slide:nth-child(${
-            swiper.activeIndex + 1
+          `.hero-section__slider .swiper-slide:nth-child(${swiper.activeIndex + 1
           })`
         );
 
@@ -106,8 +106,7 @@ if(document.querySelector('.hero-section__slider.swiper')) {
 
       slideChangeTransitionStart: function (swiper) {
         let activeSlide = document.querySelector(
-          `.hero-section__slider .swiper-slide:nth-child(${
-            swiper.activeIndex + 1
+          `.hero-section__slider .swiper-slide:nth-child(${swiper.activeIndex + 1
           })`
         );
 

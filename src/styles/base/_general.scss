@@ -406,3 +406,37 @@ main {
     background-image: url('../img/404bg-mob.webp');
   }
 }
+
+
+.txt-check {
+  display: block;
+  cursor: pointer;
+
+  span {
+    color: rgba(255, 255, 255, 0.55);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+    display: block;
+  }
+
+  input {
+    display: none;
+
+    &:checked ~ span {
+      color: #fff;
+    }
+  }
+}
+
+.lang-checkboxes  {
+  display: flex;
+  width: fit-content;
+  gap: 12px;
+}
+
+button, a {
+  cursor: pointer;
+}

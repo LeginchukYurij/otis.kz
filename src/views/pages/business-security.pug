@@ -1,0 +1,29 @@
+extends ../layouts/default
+
+block variables
+	- const title = "Отис | Отис"
+
+block content
+	include ../../blocks/modules/header/header
+
+	main 
+		include ../../blocks/modules/index-page/hero-slider-section/hero-slider-section-apartments-security3
+		include ../../blocks/modules/common/stats-section/stats-section
+		include ../../blocks/modules/apartment-security-page/approach-section/approach-section
+		include ../../blocks/modules/apartment-security-page/employees-section/employees-section
+		include ../../blocks/modules/apartment-security-page/solutions-section/solutions-section3
+		include ../../blocks/modules/common/companies-section/companies-section
+
+		.ptb
+			include ../../blocks/modules/index-page/partner-section/partner-section
+
+		include ../../blocks/modules/index-page/app-section/app-section
+		include ../../blocks/modules/apartment-security-page/faq-section/faq-section
+		include ../../blocks/modules/index-page/geo-section/geo-section	
+		include ../../blocks/modules/index-page/clients-section/clients-section
+
+	include ../../blocks/modules/footer/footer
+
+block scripts
+	script(src="js/vendor.js")
+	script(src="js/main.js")

@@ -59,6 +59,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &:hover {
+    background-color: #565656;
+    opacity: 1;
+  }
+
+  &:active {
+    background-color: #525252;
+  }
+  
+  &:disabled {
+    opacity: 0.8;
+    pointer-events: none;
+  }
 }
 
 .apps {

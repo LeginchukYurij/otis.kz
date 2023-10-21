@@ -15,10 +15,44 @@
   outline: none;
   border: none;
   cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    color: #FE8000;
+    opacity: 1;
+  }
+
+  &:active {
+    color: #FE8000;
+    background: linear-gradient(0deg, rgba(254, 128, 0, 0.20) 0%, rgba(254, 128, 0, 0.20) 100%), #FFF;
+  }
+
+  &:disabled {
+    background: #5A5A5A;
+    color: #9B9B9B; 
+    pointer-events: none;
+  }
 
   &.accent {
     background-color: var(--accent);
     color: #fff;
+
+    &:hover {
+      background: linear-gradient(0deg, rgba(254, 46, 0, 0.20) 0%, rgba(254, 46, 0, 0.20) 100%), #FE8000;
+
+      opacity: 1;
+    }
+  
+    &:active {
+      background: linear-gradient(0deg, rgba(254, 46, 0, 0.40) 0%, rgba(254, 46, 0, 0.40) 100%), #FE8000;
+      box-shadow: none;
+    }
+  
+    &:disabled {
+      background: #5A5A5A;
+      color: #9B9B9B; 
+      pointer-events: none;
+    }
   }
 
   &.xs {
@@ -26,7 +60,65 @@
     min-height: 40px;
   }
 
-  &.accent-shadow {
+  &.accent-shadow:is(.accent) {
     box-shadow: 0px 20px 20px 0px rgba(254, 128, 0, 0.21);
+
+    &:hover {
+      background: linear-gradient(0deg, rgba(254, 46, 0, 0.20) 0%, rgba(254, 46, 0, 0.20) 100%), #FE8000;
+      box-shadow: 0px 20px 20px 0px rgba(254, 128, 0, 0.50); 
+      opacity: 1;
+    }
+  
+    &:active {
+      background: linear-gradient(0deg, rgba(254, 46, 0, 0.40) 0%, rgba(254, 46, 0, 0.40) 100%), #FE8000;
+      box-shadow: none;
+    }
+  
+    &:disabled {
+      background: #5A5A5A;
+      color: #9B9B9B; 
+      pointer-events: none;
+    }
+  }
+
+  &.accent-shadow:not(.accent) {
+    box-shadow: 0px 20px 20px 0px rgba(254, 128, 0, 0.21);
+
+    &:hover {
+      color: #FE8000;
+      box-shadow: 0px 20px 20px 0px rgba(254, 128, 0, 0.50); 
+      opacity: 1;
+    }
+  
+    &:active {
+      color: #FE8000;
+      background: linear-gradient(0deg, rgba(254, 128, 0, 0.20) 0%, rgba(254, 128, 0, 0.20) 100%), #FFF; 
+      box-shadow: none;
+    }
+  
+    &:disabled {
+      background: #5A5A5A;
+      color: #9B9B9B; 
+      pointer-events: none;
+    }
+  }
+
+  .mb {
+    display: none;
+  }
+
+  
+}
+
+
+@media (max-width: 768px) {
+  .filled-btn {
+    .dk {
+      display: none;
+    }
+
+    .mb {
+      display: block;
+    }
   }
 }

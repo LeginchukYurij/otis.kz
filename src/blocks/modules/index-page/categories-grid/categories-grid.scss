@@ -19,10 +19,11 @@
   justify-content: space-between;
   border: 1px solid #000;
   text-decoration: none;
-  background-position: bottom 0 right 0;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #F8F8F8; 
+  transition: all .3s ease;
 
   &__title {
     display: flex;
@@ -39,6 +40,11 @@
     svg {
       transform: translateY(-5px);
     }
+  }
+
+  &:hover, &:active {
+    background-size: 110% 110%;
+    opacity: 1;
   }
 
   &.dark .category-tile__title {

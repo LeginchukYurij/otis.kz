@@ -1,3 +1,4 @@
 mixin input(type, name, placeholder, cls)
   .input-wrap 
-    input(type=type name=name placeholder=placeholder class=cls)
+    label(for=name)=placeholder
+    input(autocomplite="off" type=type id=name name=name  class=cls )

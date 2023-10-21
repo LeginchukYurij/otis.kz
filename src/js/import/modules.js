@@ -1,5 +1,6 @@
 import '%modules%/header/header';
 import '%modules%/footer/footer';
+
 import '%modules%/index-page/hero-slider-section/hero-slider-section';
 import '%modules%/index-page/about-section/about-section';
 import '%modules%/index-page/partner-section/partner-section';
@@ -31,3 +32,6 @@ import '%modules%/sertificates-module/sertificates-module';
 
 import '%modules%/popups/review-popup/review-popup';
 import '%modules%/popups/sertificates-popup/sertificates-popup';
+
+
+import '%modules%/mobile-menu/mobile-menu';

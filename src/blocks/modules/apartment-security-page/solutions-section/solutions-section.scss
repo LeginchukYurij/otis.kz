@@ -13,6 +13,23 @@
 }
 
 
+.tariff-full  .tariff-card__img img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  
+}
+
+.tariff-full  .tariff-card__img:before {
+  top: calc(100% - 108px);
+}
+
+.tariff-full  .tariff-card__img-bus:before {
+  top: calc(100% - 130px);
+}
+
+
+
 .tariff-full {
   display: grid;
   grid-template-columns: 1fr 485px;

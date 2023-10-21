@@ -13,4 +13,21 @@
   padding: 11px 18px 13px;
   background: none;
   cursor: pointer;
+
+  &:hover {
+    background-color: var(--accent);
+    color: #fff; 
+    opacity: 1;
+  }
+
+  &:active {
+    border: 1px solid #FE8000;
+    background: linear-gradient(0deg, rgba(254, 46, 0, 0.20) 0%, rgba(254, 46, 0, 0.20) 100%), #FE8000;
+  }
+
+  &:disabled {
+    order: 1px solid #5A5A5A;
+    color: #9B9B9B; 
+    pointer-events: none;
+  }
 }

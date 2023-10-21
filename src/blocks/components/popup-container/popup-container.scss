@@ -36,10 +36,6 @@
     transform: translateY(100px);
     transition: all 0 ease-in-out;
 
-    scrollbar-width: thin;
-    scrollbar-color: #6969dd #e0e0e0;
-    scrollbar-width: thin;
-
     &::-webkit-scrollbar {
       width: 5px;
       transform: translateX(-10px);

@@ -55,6 +55,17 @@
 
     &:hover ~ .check__mask {
       background-color: var(--accent);
+      opacity: 0.5;
+    }
+
+    &:active ~ .check__mask {
+      background-color: var(--accent);
+      opacity: 0.25;
+    }
+
+    &:checked:hover ~ .check__mask {
+      opacity: 1;
+      background: linear-gradient(0deg, rgba(254, 46, 0, 0.20) 0%, rgba(254, 46, 0, 0.20) 100%), #FE8000; 
     }
   }
 

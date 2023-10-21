@@ -31,6 +31,18 @@
     line-height: 23px; 
     cursor: pointer;
 
+    &:hover {
+      color: var(--accent);
+
+      .arr {
+        border-color: var(--accent);
+
+        svg path  {
+          stroke: var(--accent);
+        }
+      }
+    }
+
     .arr {
       width: 30px;
       min-width: 30px;
@@ -41,6 +53,33 @@
       justify-content: center;
       border: 2px solid #000;
       transition: transform .3s ease;
+
+      &:hover {
+        border-color: var(--accent);
+
+        svg path  {
+          stroke: var(--accent);
+        }
+      }
+      
+
+      &:active {
+        border-color: var(--accent);
+
+        svg path  {
+          stroke: var(--accent);
+        }
+      }
+
+      &:disabled {
+       
+        border-color:  #565656;
+
+        svg path  {
+          stroke:  #565656;
+        }
+      }
+
 
       svg {
         // transform: translateX(1px);

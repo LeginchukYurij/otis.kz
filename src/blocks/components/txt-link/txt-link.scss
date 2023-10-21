@@ -13,4 +13,28 @@
   &.down svg {
     transform: rotate(90deg);
   }
+
+  &:hover {
+    color: #EF7F1A;
+    opacity: 1;
+
+    svg path {
+      stroke: #EF7F1A;
+    }
+  }
+
+  &:active {
+    color: #FE8000;
+    opacity: 1;
+
+    svg path {
+      stroke: #FE8000;
+    }
+  }
+
+  &:disabled {
+    order: 1px solid #A1A1A1;
+    color: #A1A1A1;
+    pointer-events: none;
+  }
 }
